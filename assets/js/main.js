@@ -27,7 +27,7 @@ $(function () {
       },
     },
   });
-  $('.header-absolute .menu li a[href^="#"]').on("click", function (
+  $('.menu li a[href^="#"]').on("click", function (
     event
   ) {
     event.preventDefault();

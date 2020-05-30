@@ -60,10 +60,19 @@ header .menu li a {
 }
 
 header .menu li a.button {
-  background: #e21e26;
-  color: #fff;
-  padding: 10px 20px;
+  background: #000;
+  width: 48px;
+  height: 48px;
+  display: block;
   border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .menu img {
+  width: 24px;
+  height: 24px;
 }
 
 .cfp-button {
@@ -75,7 +84,7 @@ header .menu li a.button {
 
 .announcement-aboslute {
   position: absolute;
-  top: 350px;
+  top: 30%;
   left: 0;
   width: 100%;
   display: flex;
@@ -87,9 +96,21 @@ header .menu li a.button {
 .announcement-aboslute .title {
   font-weight: 900;
   font-size: 36pt;
-  line-height: 75pt;
+  line-height: 60pt;
   text-align: center;
   color: #413565;
+}
+
+.announcement-aboslute h2 {
+  padding: 0;
+  margin: 0;
+}
+
+.announcement-aboslute h2 a {
+  text-decoration: none;
+  font-weight: 800;
+  text-decoration: none;
+  color: #777777;
 }
 
 .announcement-aboslute .gophercon {
@@ -98,25 +119,64 @@ header .menu li a.button {
 }
 
 .announcement-aboslute .ribbon {
-  width: 100%;
+  width: 40%;
   height: auto;
+  margin-bottom: 30px;
 }
 
 .announcement-aboslute .description {
-  width: 350px;
   padding: 0;
   margin: 0;
-  font-weight: 600;
-  font-size: 12pt;
   line-height: 23px;
   text-align: center;
-  color: #413565;
-  margin-top: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #3d3d3d;
+  font-weight: 700;
+}
+
+.announcement-aboslute .btn-custom {
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 50px;
+  border: 1px solid;
+  background-color: transparent;
+  padding: 8px 37px;
+  border-color: #00aeef;
+  color: #fff;
+  text-shadow: none;
+  padding: 9px 34px;
+  transition: all 0.3s ease-in-out;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  background: #00aeef;
+  transition: 0.5s ease-in-out;
+  display: inline-block;
+}
+
+.announcement-aboslute .btn-custom:hover {
+  background: #000;
+  border-color: #000;
 }
 
 .about {
   padding: 120px 0;
   position: relative;
+  text-align: center;
+}
+
+.about h1 {
+  font-size: 24px;
+  margin-top: 20px;
+  font-weight: 800;
+}
+
+.about h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+  line-height: 30px;
 }
 
 .about .about-flex {
@@ -731,6 +791,49 @@ footer .logo img {
   display: none;
 }
 
+.mobile-menu {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-menu .menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.mobile-menu .menu li a {
+  color: #f9f9f9;
+  font-size: 22px;
+  line-height: 200%;
+  text-decoration: none;
+}
+
+.mobile-menu .close-menu {
+  width: 56px;
+  height: 56px;
+  line-height: 56px;
+  text-align: center;
+  color: #333;
+  background-color: #fff;
+  border-radius: 28px;
+  font-size: 24px;
+  margin-top: 40px;
+  text-decoration: none;
+}
+
 @media (max-width: 767.98px) {
   .slider {
     position: relative;
@@ -741,12 +844,12 @@ footer .logo img {
   }
 
   .announcement-aboslute .title {
-    font-size: 20pt;
-    line-height: 30pt;
+    font-size: 16pt;
+    line-height: 20pt;
   }
 
   .announcement-aboslute {
-    top: 30px;
+    top: 50px;
   }
 
   .sliderbg {
@@ -762,6 +865,7 @@ footer .logo img {
   .announcement-aboslute .ribbon {
     width: 85%;
     height: auto;
+    margin-bottom: 10px;
   }
 
   .announcement-aboslute .description {
@@ -961,49 +1065,6 @@ footer .logo img {
     font-size: 12pt;
   }
 
-  .mobile-menu {
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.9);
-    position: fixed;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    color: #fff;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .mobile-menu .menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    margin-top: 50px;
-  }
-
-  .mobile-menu .menu li a {
-    color: #f9f9f9;
-    font-size: 22px;
-    line-height: 200%;
-    text-decoration: none;
-  }
-
-  .mobile-menu .close-menu {
-    width: 56px;
-    height: 56px;
-    line-height: 56px;
-    text-align: center;
-    color: #333;
-    background-color: #fff;
-    border-radius: 28px;
-    font-size: 24px;
-    margin-top: 40px;
-    text-decoration: none;
-  }
-
   .menu-toggle {
     position: fixed;
     left: 20px;
@@ -1019,5 +1080,43 @@ footer .logo img {
 
   .announcement-aboslute .gophercon {
     width: 38%;
+  }
+
+  .announcement-aboslute .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .announcement-aboslute .btn-custom {
+    flex: 1;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 50px;
+    border: 1px solid;
+    background-color: transparent;
+    padding: 8px 20px;
+    border-color: #00aeef;
+    color: #fff;
+    text-shadow: none;
+    transition: all 0.3s ease-in-out;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    background: #00aeef;
+    transition: 0.5s ease-in-out;
+    display: inline-block;
+    margin: 0 5px;
+  }
+
+  .about h1 {
+    font-size: 18px;
+    font-weight: 800;
+  }
+
+  .about h2 {
+    font-size: 16px;
+    font-weight: 600;
   }
 }

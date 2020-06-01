@@ -854,7 +854,12 @@ footer .logo img {
   }
 
   .announcement-aboslute {
-    top: 50px;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   .sliderbg {

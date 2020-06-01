@@ -9,11 +9,12 @@ $(function () {
     $(".mobile-menu").css({ display: "none" });
   });
   $(".owl-carousel").owlCarousel({
-    loop: true,
+    loop: false,
     margin: 10,
     autoWidth: false,
     nav: true,
     items: 5,
+    center: true,
     navText: [
       "<img class='chevron' src='assets/img/left.svg' alt='left' />",
       "<img class='chevron' src='assets/img/right.svg' alt='right' />",

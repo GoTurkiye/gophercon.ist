@@ -101,9 +101,20 @@ header .menu img {
   color: #413565;
 }
 
-.announcement-aboslute h2 {
-  padding: 0;
-  margin: 0;
+.announcement-aboslute h1 {
+  color: #000;
+  font-size: 44pt;
+  text-shadow: 1px 1px #000;
+  font-weight: bold;
+  color: #fff;
+}
+
+.announcement-aboslute p {
+  color: #000;
+  font-size: 24pt;
+  text-shadow: 1px 1px #000;
+  font-weight: bold;
+  color: #fff;
 }
 
 .announcement-aboslute h2 a {
@@ -1102,6 +1113,26 @@ footer .logo img {
     transition: 0.5s ease-in-out;
     display: inline-block;
     margin: 0 5px;
+  }
+
+  .announcement-aboslute h1 {
+    text-align: center;
+    font-size: 20px;
+    color: #000;
+    text-shadow: none;
+    font-weight: 900;
+    text-shadow: 1px 1px #FFF;
+  }
+
+  .announcement-aboslute p {
+    font-size: 16px;
+    line-height: 20px;
+    width: 90%;
+    text-align: center;
+    color: #000;
+    text-shadow: none;
+    font-weight: 900;
+    text-shadow: 1px 1px #FFF;
   }
 
   .about h1 {

@@ -198,9 +198,9 @@ header .menu img {
 }
 
 .about .gopher {
-  width: 300px;
+  width: 350px;
   height: auto;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .about .title {
@@ -889,7 +889,7 @@ footer .logo img {
   }
 
   .about .gopher {
-    width: 200px;
+    width: 220px;
   }
 
   .about .title {

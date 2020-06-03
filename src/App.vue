@@ -8,28 +8,28 @@
                 <li><a href="#sponsors">{{ $t('Sponsors') }}</a></li>
                 <li><a href="#ticket" class="button">{{ $t('Tickets') }}</a></li>
             </ul>
-            <a href="javascript::void(0)" class="close-menu">x</a>
+            <a href="javascript:" class="close-menu">x</a>
         </div>
 
-        <a href="javascript::void(0)" class="menu-toggle">
-            <img src="assets/img/open-menu.svg" alt="open mobile menu"/>
+        <a href="javascript:" class="menu-toggle">
+            <img src="/assets/img/open-menu.svg" alt="open mobile menu"/>
         </a>
 
         <section id="slider" class="slider">
-            <img class="sliderbg" src="assets/img/slider.png" alt="slider"/>
-            <img class="sliderbgmobile" src="assets/img/slider.png" alt="slider"/>
+            <img class="sliderbg" src="/assets/img/slider.png" alt="slider"/>
+            <img class="sliderbgmobile" src="/assets/img/slider.png" alt="slider"/>
 
             <div class="header-absolute">
                 <div class="container">
                     <header>
-                        <a href="index.html" class="logo"
-                        ><img src="assets/img/gophercon.png" alt="logo"
+                        <a href="#" class="logo"
+                        ><img src="/assets/img/gophercon.png" alt="logo"
                         /></a>
                         <ul class="menu">
                             <li>
-                                <a href="javascript::void()" class="button menu-toggle">
+                                <a href="javascript:" class="button menu-toggle">
                                     <img
-                                            src="assets/img/open-menu-white.svg"
+                                            src="/assets/img/open-menu-white.svg"
                                             alt="open mobile menu"
                                     />
                                 </a>
@@ -50,7 +50,7 @@
         <section class="about" id="about">
             <div class="container">
                 <div class="about-flex">
-                    <img src="assets/img/gopher-hi.png" alt="gopher" class="gopher"/>
+                    <img src="/assets/img/gopher-hi.png" alt="gopher" class="gopher"/>
                     <h2 class="title">{{ $t('ABOUT CONFERENCE') }}</h2>
                     <h2>
                         {{ $t('GopherCon Turkey brings the Turkish Go community together through its events throughout the world. The conference will be held on July 25 at Online. 1000+ Gophers will attend the event.') }}
@@ -64,7 +64,7 @@
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <div class="profile">
-                            <img height="180px" src="assets/img/gopher-05.png" alt="avatar" class="avatar"/>
+                            <img height="180px" src="/assets/img/gopher-05.png" alt="avatar" class="avatar"/>
                             <p class="name">{{ $t('You?') }}</p>
                             <!-- <p class="description">
                               Gopher
@@ -72,17 +72,17 @@
                             <ul class="social">
                                 <li>
                                     <a href="#"
-                                    ><img src="assets/img/twitter.svg" alt="twitter"
+                                    ><img src="/assets/img/twitter.svg" alt="twitter"
                                     /></a>
                                 </li>
                                 <li>
                                     <a href="#"
-                                    ><img src="assets/img/github.svg" alt="github"
+                                    ><img src="/assets/img/github.svg" alt="github"
                                     /></a>
                                 </li>
                                 <li>
                                     <a href="#"
-                                    ><img src="assets/img/linkedin.svg" alt="linkedin"
+                                    ><img src="/assets/img/linkedin.svg" alt="linkedin"
                                     /></a>
                                 </li>
                             </ul>
@@ -93,7 +93,7 @@
         </section>
         <section class="schedule" id="schedule">
             <img
-                    src="assets/img/gopher-02.png"
+                    src="/assets/img/gopher-02.png"
                     alt="gopher"
                     class="gopher hide-mobile"
             />
@@ -104,14 +104,14 @@
                         <div class="line-center">
                             <div class="track-title flex1 hide-mobile">
                                 <p>{{ $t('Sponsor Track 1') }}</p>
-                                <img class="arrow" src="assets/img/arrow.svg" alt="arrow"/>
+                                <img class="arrow" src="/assets/img/arrow.svg" alt="arrow"/>
                             </div>
                             <div class="flex1 flex-center">
                                 <div class="timer">10:00 - {{ $t('Start') }}</div>
                             </div>
                             <div class="track-title flex1 hide-mobile">
                                 <p>{{ $t('Sponsor Track 2') }}</p>
-                                <img class="arrow" src="assets/img/arrow.svg" alt="arrow"/>
+                                <img class="arrow" src="/assets/img/arrow.svg" alt="arrow"/>
                             </div>
                         </div>
                     </div>
@@ -120,7 +120,7 @@
         </section>
         <section class="ticket" id="ticket">
             <img
-                    src="assets/img/gopher-07.png"
+                    src="/assets/img/gopher-07.png"
                     alt="gopher"
                     class="gopher hide-mobile"
             />
@@ -129,7 +129,7 @@
                 <div class="tables">
                     <div class="table mt-4">
                         <img
-                                src="assets/img/gopher-03.png"
+                                src="/assets/img/gopher-03.png"
                                 alt="gopher"
                                 class="gopher-free"
                         />
@@ -142,7 +142,7 @@
                     </div>
                     <div class="table table-red">
                         <img
-                                src="assets/img/gopher-04.png"
+                                src="/assets/img/gopher-04.png"
                                 alt="gopher"
                                 class="gopher-support"
                         />
@@ -155,7 +155,7 @@
                     </div>
                     <div class="table mt-4">
                         <img
-                                src="assets/img/gopher-05.png"
+                                src="/assets/img/gopher-05.png"
                                 alt="gopher"
                                 class="gopher-community"
                         />
@@ -171,7 +171,7 @@
         </section>
         <section class="sponsors" id="sponsors">
             <img
-                    src="assets/img/gopher-06.png"
+                    src="/assets/img/gopher-06.png"
                     alt="gopher"
                     class="gophers hide-mobile"
             />
@@ -217,17 +217,17 @@
                         <ul class="footer-social-menu">
                             <li>
                                 <a href="#" title="twitter"
-                                ><img src="assets/img/twitter-white.svg" alt="twitter"
+                                ><img src="/assets/img/twitter-white.svg" alt="twitter"
                                 /></a>
                             </li>
                             <li>
                                 <a href="#" title="github"
-                                ><img src="assets/img/github-white.svg" alt="github"
+                                ><img src="/assets/img/github-white.svg" alt="github"
                                 /></a>
                             </li>
                             <li>
                                 <a href="#" title="kommunity"
-                                ><img src="assets/img/kommunity.svg" alt="kommunity"
+                                ><img src="/assets/img/kommunity.svg" alt="kommunity"
                                 /></a>
                             </li>
                         </ul>
@@ -241,11 +241,62 @@
 <script>
     export default {
         name: 'App',
+        metaInfo() {
+            return {
+                title: this.$t('title'),
+                titleTemplate: '%s',
+                meta: [
+                    {
+                        'name': 'description',
+                        'content': this.$t('meta_description'),
+                        'vmid': 'description'
+                    },
+                    {
+                        'name': 'title',
+                        'content': this.$t('meta_title'),
+                        'vmid': 'title'
+                    },
+                    {
+                        'property': 'og:title',
+                        'content': this.$t('og_title'),
+                        'vmid': 'og:title'
+                    },
+                    {
+                        'property': 'og:description',
+                        'content': this.$t('og_description'),
+                        'vmid': 'og:description'
+                    },
+                    {
+                        'property': 'og:type',
+                        'content': 'article',
+                        'vmid': 'og:type'
+                    },
+                    {
+                        'name': 'twitter:card',
+                        'content': 'summary',
+                        'vmid': 'twitter:card'
+                    },
+                    {
+                        'property': 'og:url',
+                        'content': location.href,
+                        'vmid': 'og:url'
+                    },
+                    {
+                        'property': 'og:image',
+                        'content': this.$t('og_image'),
+                        'vmid': 'og:image'
+                    }
+                ]
+            }
+        },
         mounted() {
-            let url = document.location.href
-            let indexOfSharp = url.indexOf('#')
-            let lang = url.substring(indexOfSharp + 1)
+            // let url = document.location.href
+            // let indexOfSharp = url.indexOf('#')
+            // let lang = url.substring(indexOfSharp + 1)
+            //
+            // this.$i18n.locale = lang
 
+            let lang = this.$route.name
             this.$i18n.locale = lang
         }
     }

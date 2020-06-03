@@ -23,10 +23,16 @@
  "REGISTER": "REGISTER",
  "SUPPORT CHARITY": "SUPPORT CHARITY",
  "BUY NOW": "BUY NOW",
- "SUPPORT CHARITY": "SUPPORT CHARITY",
  "SPONSORS": "SPONSORS",
  "Would you like to be the part of this great event?": "Would you like to be the part of this great event?",
  "please_get_in_touch": "Please <a href=\"mailto:support@kommunity.com?Subject=GopherCon 2020 Sponsorship\">get in touch</a> with us for sponsorship options!",
  "Code of Conduct": "Code of Conduct",
- "Contact Us": "Contact Us"
+ "Contact Us": "Contact Us",
+
+ "title": "GopherCon Turkey | 25th, July 2020",
+ "meta_title": "meta_title",
+ "meta_description": "meta_description",
+ "og_title": "og_title",
+ "og_description": "og_description",
+ "og_image": "og_image"
 }

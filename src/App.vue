@@ -43,7 +43,7 @@
                 <p>{{ $t('header_slogan') }}</p>
                 <div class="buttons">
                     <a class="btn btn-custom" href="https://kommunity.com/goturkiye/events/gophercon-turkey-59b694b8/cfp" target="_blank">{{ $t('Call for Papers') }}</a>
-                    <a class="btn btn-custom" href="#ticket">{{ $t('Register') }}</a>
+                    <a class="btn btn-custom" href="#ticket">{{ $t('_register') }}</a>
                 </div>
             </div>
         </section>

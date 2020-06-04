@@ -4,8 +4,8 @@
  "Schedule": "Program",
  "Sponsors": "Sponsorlar",
  "Tickets": "Biletler",
- "25th, July 2020": "25 Temmuz 2020",
- "GopherCon is focused on the Go programming language": "GopherCon, Go Programlama Dili Konferansı",
+ "header_title": "GopherCon Türkiye",
+ "header_slogan": "Go Programlama Dili Konferansı, 25 Temmuz 2020",
  "Call for Papers": "Konuşmacı Çağrısı",
  "Register": "Kayıt Ol",
  "ABOUT CONFERENCE": "KONFERANS HAKKINDA",
@@ -46,8 +46,8 @@
 
  "title": "GopherCon Türkiye | 25 Temmuz 2020",
  "meta_title": "GopherCon Türkiye | 25 Temmuz 2020",
- "meta_description": "GopherCon, Go Programlama Dili Konferansı",
+ "meta_description": "GopherCon Türkiye: Go Programlama Dili Konferansı",
  "og_title": "GopherCon Türkiye | 25 Temmuz 2020",
- "og_description": "GopherCon, Go Programlama Dili Konferansı",
+ "og_description": "GopherCon Türkiye: Go Programlama Dili Konferansı",
  "og_image": "https://gophercon.ist/assets/img/gophercon01tr.png"
 }

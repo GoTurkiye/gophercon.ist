@@ -39,8 +39,8 @@
                 </div>
             </div>
             <div class="announcement-aboslute">
-                <h1>{{ $t('25th, July 2020') }}</h1>
-                <p>{{ $t('GopherCon is focused on the Go programming language') }}</p>
+                <h1>{{ $t('header_title') }}</h1>
+                <p>{{ $t('header_slogan') }}</p>
                 <div class="buttons">
                     <a class="btn btn-custom" href="https://kommunity.com/goturkiye/events/gophercon-turkey-59b694b8/cfp" target="_blank">{{ $t('Call for Papers') }}</a>
                     <a class="btn btn-custom" href="#ticket">{{ $t('Register') }}</a>

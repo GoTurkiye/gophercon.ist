@@ -42,8 +42,8 @@
                 <h1>{{ $t('25th, July 2020') }}</h1>
                 <p>{{ $t('GopherCon is focused on the Go programming language') }}</p>
                 <div class="buttons">
-                    <a class="btn btn-custom" href="#">{{ $t('Call for Papers') }}</a>
-                    <a class="btn btn-custom" href="#">{{ $t('Register') }}</a>
+                    <a class="btn btn-custom" href="https://kommunity.com/goturkiye/events/gophercon-turkey-59b694b8/cfp" target="_blank">{{ $t('Call for Papers') }}</a>
+                    <a class="btn btn-custom" href="#ticket">{{ $t('Register') }}</a>
                 </div>
             </div>
         </section>
@@ -52,9 +52,8 @@
                 <div class="about-flex">
                     <img src="/assets/img/gopher-hi.png" alt="gopher" class="gopher"/>
                     <h2 class="title">{{ $t('ABOUT CONFERENCE') }}</h2>
-                    <h2>
-                        {{ $t('GopherCon Turkey brings the Turkish Go community together through its events throughout the world. The conference will be held on July 25 at Online. 1000+ Gophers will attend the event.') }}
-                    </h2>
+                    <div v-html="$t('event_details')">
+                    </div>
                 </div>
             </div>
         </section>
@@ -133,12 +132,12 @@
                                 alt="gopher"
                                 class="gopher-free"
                         />
-                        <div class="name">{{ $t('COME AND JOIN!') }}</div>
+                        <div class="name">{{ $t('STANDARD') }}</div>
                         <p class="price">{{ $t('Free') }}</p>
                         <ul>
-                            <li>{{$t('Ticket guarrantees admission')}}</li>
+                            <li v-html="$t('free_ticket_1')"></li>
                         </ul>
-                        <a href="#" class="buy">{{$t('REGISTER')}}</a>
+                        <a href="https://kommunity.com/goturkiye/events/gophercon-turkey-59b694b8/tickets" class="buy">{{$t('REGISTER')}}</a>
                     </div>
                     <div class="table table-red">
                         <img
@@ -146,12 +145,15 @@
                                 alt="gopher"
                                 class="gopher-support"
                         />
-                        <div class="name">{{$t('SUPPORT CHARITY')}}</div>
-                        <p class="price"><small>TRY</small>0</p>
+                        <div class="name">{{$t('EXCLUSIVE')}}</div>
+                        <p class="price"><small>TRY</small>49.99</p>
                         <ul>
-                            <li>{{$t('Ticket guarrantees admission')}}</li>
+                            <li v-html="$t('exclusive_ticket_1')"></li>
+                            <li v-html="$t('exclusive_ticket_2')"></li>
+                            <li v-html="$t('exclusive_ticket_3')"></li>
+                            <li v-html="$t('exclusive_ticket_4')"></li>
                         </ul>
-                        <a href="#" class="buy buy-red">{{$t('BUY NOW')}}</a>
+                        <a href="https://kommunity.com/goturkiye/events/gophercon-turkey-59b694b8/tickets" class="buy buy-red">{{$t('BUY NOW')}}</a>
                     </div>
                     <div class="table mt-4">
                         <img
@@ -159,12 +161,15 @@
                                 alt="gopher"
                                 class="gopher-community"
                         />
-                        <div class="name">{{$t('SUPPORT CHARITY')}}</div>
-                        <p class="price"><small>TRY</small>0</p>
+                        <div class="name">{{$t('SPONSORSHIP')}}</div>
+                        <p class="price"><small>TRY</small>4000</p>
                         <ul>
-                            <li>{{$t('Ticket guarrantees admission')}}</li>
+                            <li v-html="$t('sponsorship_ticket_1')"></li>
+                            <li v-html="$t('sponsorship_ticket_2')"></li>
+                            <li v-html="$t('sponsorship_ticket_3')"></li>
+                            <li v-html="$t('sponsorship_ticket_4')"></li>
                         </ul>
-                        <a href="#" class="buy">{{$t('BUY NOW')}}</a>
+                        <a href="https://kommunity.com/goturkiye/events/gophercon-turkey-59b694b8/tickets" class="buy">{{$t('BUY NOW')}}</a>
                     </div>
                 </div>
             </div>
@@ -216,17 +221,12 @@
                     <div class="col-12 col-md-4">
                         <ul class="footer-social-menu">
                             <li>
-                                <a href="#" title="twitter"
+                                <a href="https://twitter.com/goturkiye" title="twitter" target="_blank"
                                 ><img src="/assets/img/twitter-white.svg" alt="twitter"
                                 /></a>
                             </li>
                             <li>
-                                <a href="#" title="github"
-                                ><img src="/assets/img/github-white.svg" alt="github"
-                                /></a>
-                            </li>
-                            <li>
-                                <a href="#" title="kommunity"
+                                <a href="https://kommunity.com/goturkiye" title="kommunity" target="_blank"
                                 ><img src="/assets/img/kommunity.svg" alt="kommunity"
                                 /></a>
                             </li>

@@ -137,7 +137,7 @@
                         <ul>
                             <li v-html="$t('free_ticket_1')"></li>
                         </ul>
-                        <a href="https://kommunity.com/goturkiye/events/gophercon-turkey-59b694b8/tickets" class="buy">{{$t('REGISTER')}}</a>
+                        <a href="https://kommunity.com/goturkiye/events/gophercon-turkey-59b694b8/tickets" target="_blank" class="buy">{{$t('REGISTER')}}</a>
                     </div>
                     <div class="table table-red">
                         <img
@@ -153,7 +153,7 @@
                             <li v-html="$t('exclusive_ticket_3')"></li>
                             <li v-html="$t('exclusive_ticket_4')"></li>
                         </ul>
-                        <a href="https://kommunity.com/goturkiye/events/gophercon-turkey-59b694b8/tickets" class="buy buy-red">{{$t('BUY NOW')}}</a>
+                        <a href="https://kommunity.com/goturkiye/events/gophercon-turkey-59b694b8/tickets" target="_blank" class="buy buy-red">{{$t('BUY NOW')}}</a>
                     </div>
                     <div class="table mt-4">
                         <img
@@ -169,7 +169,7 @@
                             <li v-html="$t('sponsorship_ticket_3')"></li>
                             <li v-html="$t('sponsorship_ticket_4')"></li>
                         </ul>
-                        <a href="https://kommunity.com/goturkiye/events/gophercon-turkey-59b694b8/tickets" class="buy">{{$t('BUY NOW')}}</a>
+                        <a href="https://kommunity.com/goturkiye/events/gophercon-turkey-59b694b8/tickets" target="_blank" class="buy">{{$t('BUY NOW')}}</a>
                     </div>
                 </div>
             </div>

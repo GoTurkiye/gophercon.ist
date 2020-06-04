@@ -184,7 +184,7 @@
             <div class="container">
                 <div class="owl-carousel owl-theme">
                     <div class="sponsor">
-                        <a href="#"
+                        <a href="https://itsmoneo.com" target="_blank"
                         ><img
                                 src="https://itsmoneo.com/assets/image/logo.svg"
                                 alt="sponsor"

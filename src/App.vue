@@ -579,7 +579,7 @@
             </div>
             <div class="line-center">
               <div class="flex1 flex-center">
-                <div class="timer mt-5">17:00 - Finish</div>
+                <div class="timer mt-5">18:00 - Finish</div>
               </div>
             </div>
           </div>

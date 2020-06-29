@@ -50,5 +50,7 @@
   "meta_description": "GopherCon is focused on the Go programming language",
   "og_title": "GopherCon Turkey | 25th, July 2020",
   "og_description": "GopherCon is focused on the Go programming language",
-  "og_image": "https://gophercon.ist/assets/img/gophercon01en.png"
+  "og_image": "https://gophercon.ist/assets/img/gophercon01en.png",
+  "finish": "Finish",
+  "show_more": "Show More"
 }

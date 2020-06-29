@@ -183,7 +183,7 @@ header .menu img {
   font-weight: 800;
 }
 
-.about p {
+.about h2 {
   font-size: 20px;
   font-weight: 600;
   margin-top: 10px;
@@ -315,6 +315,16 @@ header .menu img {
   height: 18px;
 }
 
+.speakers .profile img{
+  border-radius: 100%;
+  width: 180px;
+  height: 180px;
+}
+
+.speakers .profile .position{
+  font-size: 14px;
+}
+
 .schedule {
   padding: 80px 0;
   position: relative;
@@ -342,7 +352,7 @@ header .menu img {
   content: "";
   position: absolute;
   width: 5px;
-  height: 1600px;
+  height: 9999px;
   background-color: #ee6260;
   left: 0;
   right: 0;
@@ -989,7 +999,8 @@ footer .logo img {
   }
 
   .speakers .profile img {
-    width: 35%;
+    width: 100px;
+    height: 100px;
   }
 
   .about {

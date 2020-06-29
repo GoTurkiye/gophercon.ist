@@ -2,11 +2,14 @@ import Vue from 'vue'
 import App from './App.vue'
 import VueI18n from 'vue-i18n'
 import VueRouter from 'vue-router'
+import VueSweetalert2 from 'vue-sweetalert2'
 import VueMeta from 'vue-meta'
 import en from './languages/en.json'
 import tr from './languages/tr.json'
+import 'sweetalert2/dist/sweetalert2.min.css'
 
 Vue.use(VueI18n)
+Vue.use(VueSweetalert2)
 Vue.config.productionTip = false
 
 const languages = {

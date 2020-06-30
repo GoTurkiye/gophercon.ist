@@ -460,10 +460,9 @@
                 track="Sponsor Track 2"
                 time="12:00 - 13:00"
                 avatar="ibrahim-serdar-acikgoz.jpg"
-                title="Exploiting Go Struct Tags"
+                title="Go Struct Tag'lerini kullanmak"
                 author="Ibrahim Serdar Açıkgöz"
-                desc="We all use Go struct tags especially when working with JSON, YAML, etc. But have you ever wondered how they work? Or, more interestingly how we can use it for different purposes? Let's dive into inner-mechanisms of struct tags and explore the possibilities of what can be done."
-              />
+                desc="Go'da çogu zaman verilerin JSON, YAML biçimlerine serileştirilmede bize yardımcı olmasi için veri tiplerine etiketler ekliyoruz. Peki bunun nasıl çalıştıgını hiç düşündünüz mü? Ya da farklı amaçlarda kullanma fırsatınız oldu mu? Gelin hep beraber bu özelligin nasıl çalıştıgına bir bakalım ve kendi amaçlarımız için neler yapılabilecegini tartışalım." />
             </div>
             <div class="line-center">
               <Card
@@ -563,9 +562,9 @@
                 track="Sponsor Track 1"
                 time="17:00 - 18:00"
                 avatar="kemal-akkoyun.jpg"
-                title="Gözlemlenebilir Go servisleri inşa etmek"
+                title="Building Observable Go Services"
                 author="Kemal Akkoyun"
-                desc="Günümüzde, Go uygulamalarımızı dağıttık, birbirine gevşek şekilde bağlı mikro-servisler olarak inşa edip, esnek ve fazlasıyla değişken altyapı üzerinde kısa yaşam döngüleri olan iş yükleri olarak koşturuyoruz. Bu koşullar altında, gözlemlenebilirlik, yazdığımız uygulamalarımızın nasıl çalıştığını ve nasıl davrandığını anlamak ve yüksek düzeyde erişilebilir, hatalara dirençli hizmet sunmak için kilit bir nitelik haline geldi. Bir uygulamadan toplanabilecek “log”, “metric”, “tracing” ve “profiling” gibi sinyalleri, gözlemlenebilirlik sütunları adı altında toplayabiliriz. Bu sinyalleri kullanarak gerçek zamanlı, eyleme geçirilebilir uyarılar yaratabilir, uygulamaları yakinen takip edebileceğimiz paneller oluşturabilir ve sistemde oluşan sıkıntıları kökenini bulabilmek için derinlemesine analizler yapabiliriz. Go ve CNCF ekosistemi içinde, bu gözlenebilirlik sinyallerini toparlayabilecek ve kullanışlı hale getirecek çeşitli araçlar mevcut. Bu konuşma sırasında Kemal, ilk olarak kritik hizmetleri gözlemlenir kılmak için servisler içinde kullanılabilecek araçları tanıtıp, bu araçları uygulama içinde verimli şekilde kullanılmasını sağlayacak örüntüleri paylaşacaktır. Daha sonrasında toplanan bu sinyallerin nasıl kullanılacağını, gerçek senaryolar üzerinde, CNCF ekosistemi içindeki araçları (Loki, Prometheus, OpenTelemetry, Jaeger, Conprof) kullanarak demo edecektir. Yoğun trafik altında koşan uygulamaları inşa edip çalıştırırken ya da çalışan sistemlerde karşılaşılan problemlerin kökenini anlamak için kullanılan yöntemleri dinleyecekleri paylaşmayı amaçlamaktadır."
+                desc="In modern days, we run our applications as loosely coupled micro-services on distributed, elastic infrastructure as (mostly) stateless workloads. Under these circumstances, observability has become a key attribute to understand how our applications run and behave in action, in order to provide highly available and resilient service. There exist several observability signals, such as “log”, “metric”, “tracing” and “profiling” that can be collected from a running service, which we can also call pillars of observability. Using these signals, we can create real-time, actionable alerts, create panels where we can monitor applications closely, and perform in-depth analysis to find the root of the systems’ failures. Within the Go and CNCF ecosystem, there are a variety of tools that can collect and make these observable signals useful. During this talk, Kemal will first introduce the tools that can be embedded in the services to make critical services observable, and share the patterns that will enable them to be used efficiently in the applications and services. Moreover,  he will demonstrate how to use these collected signals in real-life scenarios, using tools within the CNCF ecosystem (Loki, Prometheus, OpenTelemetry, Jaeger, Conprof). He also aims to share the methods that are used to build and run applications running under heavy-traffic, and to understand the origin of the problems encountered in running systems."
               />
               <Card
                 position="right"

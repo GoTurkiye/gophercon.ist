@@ -41,11 +41,13 @@ header .menu {
   margin: 0;
   list-style: none;
   margin-left: auto;
+  display: flex;
+  align-items: center;
 }
 
 header .menu li {
   display: inline-block;
-  margin-right: 30px;
+  margin-right: 15px;
 }
 
 header .menu li:last-child {
@@ -60,7 +62,7 @@ header .menu li a {
 }
 
 header .menu li a.button {
-  background: #000;
+  background: #1a1c24;
   width: 48px;
   height: 48px;
   display: block;
@@ -68,6 +70,48 @@ header .menu li a.button {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.language-wrapper {
+  display: none;
+  position: relative;
+}
+
+.language-wrapper a.language-button {
+  background: transparent !important;
+  border: 2px solid #1a1c24;
+  color: #1a1c24;
+  width: 48px;
+  height: 48px;
+  display: block;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.language-wrapper a.language-button:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+.language-picker {
+  position: absolute;
+  right: 0;
+  padding: 0;
+  z-index: 9;
+  list-style: none;
+}
+
+.language-picker li {
+  margin: 0;
+  margin-top: 6px;
+}
+
+.language-picker li a.language-button {
+  border: 2px dotted #1a1c24;
 }
 
 header .menu img {
@@ -851,6 +895,11 @@ footer .logo img {
   text-decoration: none;
 }
 
+.mobile-nav {
+  display: flex;
+  align-items: 'center';
+}
+
 @media (max-width: 767.98px) {
   .slider {
     position: relative;
@@ -866,7 +915,7 @@ footer .logo img {
   }
 
   .announcement-aboslute {
-    top: 30px;
+    top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -880,7 +929,7 @@ footer .logo img {
 
   .sliderbgmobile {
     display: block;
-    width: 100%;
+    width: 150%;
     height: auto;
   }
 
@@ -1094,6 +1143,22 @@ footer .logo img {
     top: 20px;
     z-index: 500;
     display: block;
+  }
+
+  .language-wrapper {
+    display: inline-block;
+    position: absolute;
+    z-index: 9;
+    top: 20px;
+    right: 20px;
+  }
+
+  .language-wrapper a.language-button {
+    border: 1px solid #1a1c24;
+    width: 32px;
+    height: 32px;
+    font-weight: 700;
+    font-size: 12px;
   }
 
   .menu-toggle img {

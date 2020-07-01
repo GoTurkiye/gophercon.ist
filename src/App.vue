@@ -21,9 +21,24 @@
       <a href="javascript:" class="close-menu">x</a>
     </div>
 
-    <a href="javascript:" class="menu-toggle">
-      <img src="/assets/img/open-menu.svg" alt="open mobile menu" />
-    </a>
+    <div class="mobile-nav">
+      <a href="javascript:" class="menu-toggle">
+        <img src="/assets/img/open-menu.svg" alt="open mobile menu" />
+      </a>
+      <div class="language-wrapper">
+        <a href="javascript:" class="language-button" @click="showLanguages = !showLanguages">
+          {{ this.$i18n.locale }}
+        </a>
+        <ul class="language-picker" v-show="showLanguages">
+          <li v-if="this.$i18n.locale != 'tr'">
+            <a href="/tr" class="language-button">TR</a>
+          </li>
+          <li v-if="this.$i18n.locale != 'en'">
+            <a href="/en" class="language-button">EN</a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <section id="slider" class="slider">
       <img class="sliderbg" src="/assets/img/slider.png" alt="slider" />
@@ -36,6 +51,19 @@
               <img src="/assets/img/gophercon.png" alt="logo" />
             </a>
             <ul class="menu">
+              <li class="language-wrapper">
+                <a href="javascript:" class="button language-button" @click="showLanguages = !showLanguages">
+                  {{ this.$i18n.locale }}
+                </a>
+                <ul class="language-picker" v-show="showLanguages">
+                  <li v-if="this.$i18n.locale != 'tr'">
+                    <a href="/tr" class="button language-button">TR</a>
+                  </li>
+                  <li v-if="this.$i18n.locale != 'en'">
+                    <a href="/en" class="button language-button">EN</a>
+                  </li>
+                </ul>
+              </li>
               <li>
                 <a href="javascript:" class="button menu-toggle">
                   <img src="/assets/img/open-menu-white.svg" alt="open mobile menu" />
@@ -748,6 +776,11 @@ export default {
         }
       ]
     };
+  },
+  data() {
+    return {
+      showLanguages: false,
+    }
   },
   mounted() {
     // let url = document.location.href

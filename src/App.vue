@@ -518,7 +518,7 @@
                 track="Sponsor Track 1"
                 time="14:00 - 15:00"
                 avatar="fahri-yardimci.jpg"
-                title="Distributed Tracing on Golang using OpenTelemetry"
+                title="Distributed Tracing on Go using OpenTelemetry"
                 author="Fahri Yardımcı"
                 desc="In the microservices era, monitoring applications become harder due to distributed and asynchronous data flow, therefore quickly identifying errors and performance problems is crucial. Tracing will help identify which part of the code is problematic, or causing latency. With the multiple microservices, Distributed tracing is used for identifying the applications and functions which cause errors. OpenTelemetry is a CNCF (Cloud Native Computing Foundation) sandbox project and aims to production-ready in the second half of 2020. In this talk, I'll talk about what is Tracing, Spans, Injecting/Extracting traces via HTTP, and Tracing models with the OpenTelemetry implementations."
               />

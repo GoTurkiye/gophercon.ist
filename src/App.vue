@@ -538,9 +538,9 @@
                 track="Sponsor Track 1"
                 time="15:00 - 16:00"
                 avatar="amit-mishra.jpg"
-                title="How goLang enabled us to build a platform to live stream SuperBowl 2020 to millions of concurrent users!"
+                title="How Go enabled us to build a platform to live stream SuperBowl 2020 to millions of concurrent users"
                 author="Amit Mishra"
-                desc="I am part of Architect team which is responsible for building platform to live stream the contents at Fox. As I first time speaker , I would like to share our story and challenges we face everyday while streaming contents. I would like to share how goLang helped us building a playback platform which can handle these challenges and serve magical moment to millions of concurrent users without any issue."
+                desc="I am part of Architect team which is responsible for building platform to live stream the contents at Fox. As I first time speaker , I would like to share our story and challenges we face everyday while streaming contents. I would like to share how Go helped us building a playback platform which can handle these challenges and serve magical moment to millions of concurrent users without any issue."
               />
               <Card
                 position="right"

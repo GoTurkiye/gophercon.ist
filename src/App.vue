@@ -674,10 +674,15 @@
       <img src="/assets/img/gopher-06.png" alt="gopher" class="gophers hide-mobile" />
       <h2 class="title">{{$t('SPONSORS')}}</h2>
       <div class="container">
-        <div class="owl-carousel owl-theme">
+        <div class="sponsor-list"><!-- owl-carousel owl-theme -->
           <div class="sponsor">
             <a href="https://itsmoneo.com" target="_blank">
               <img src="https://itsmoneo.com/assets/image/logo.svg" alt="sponsor" />
+            </a>
+          </div>
+          <div class="sponsor">
+            <a href="https://www.modanisa.com/" target="_blank">
+              <img src="/assets/img/modanisa.png" alt="sponsor" />
             </a>
           </div>
         </div>

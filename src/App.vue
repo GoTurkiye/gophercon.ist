@@ -685,6 +685,11 @@
               <img src="/assets/img/modanisa.png" alt="sponsor" />
             </a>
           </div>
+          <div class="sponsor">
+            <a href="https://www.lingaros.com/" target="_blank">
+              <img src="/assets/img/linga.png" alt="sponsor" style="padding: 0 25px" />
+            </a>
+          </div>
         </div>
         <p class="info">
           {{$t('Would you like to be the part of this great event?')}}

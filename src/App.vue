@@ -687,7 +687,7 @@
           </div>
           <div class="sponsor">
             <a href="https://www.lingaros.com/" target="_blank">
-              <img src="/assets/img/linga.png" alt="sponsor" style="padding: 0 25px" />
+              <img src="/assets/img/linga.png" alt="sponsor" style="padding: 0 25px; max-height: 40px" />
             </a>
           </div>
         </div>

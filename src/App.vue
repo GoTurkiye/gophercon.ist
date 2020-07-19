@@ -280,10 +280,10 @@
             <div class="profile">
               <img src="assets/img/speakers/amit-mishra.jpg" alt="avatar" class="avatar" />
               <p class="name">Amit Mishra</p>
-              <p class="position">Software Engineer at Avaya</p>
+              <p class="position">Lead Software Architect at Fox</p>
               <ul class="social">
                 <li>
-                  <a target="_blank" href="https://www.linkedin.com/in/amitkailashmishra/">
+                  <a target="_blank" href="https://www.linkedin.com/in/amit-mishra-0838a87/">
                     <img src="assets/img/linkedin.svg" alt="linkedin" />
                   </a>
                 </li>
@@ -430,7 +430,7 @@
                 <img class="arrow" src="/assets/img/arrow.svg" alt="arrow" />
               </div>
               <div class="flex1 flex-center">
-                <div class="timer">10:00 - {{ $t('Start') }}</div>
+                <div class="timer">11:00 - {{ $t('Start') }}</div>
               </div>
               <div class="track-title flex1 hide-mobile">
                 <p>{{ $t('Sponsor Track 2') }}</p>
@@ -441,36 +441,20 @@
               <Card
                 position="left"
                 track="Sponsor Track 1"
-                time="10:00 - 11:00"
-                title="Keynote"
-                desc=""
-              />
-              <Card
-                position="right"
-                track="Sponsor Track 2"
-                time="10:00 - 11:00"
-                title="Keynote"
-                desc=""
-              />
-            </div>
-            <div class="line-center">
-              <Card
-                position="left"
-                track="Sponsor Track 1"
                 time="11:00 - 12:00"
-                avatar="teiva-harsanyi.jpg"
-                title="Mechanical Sympathy in Go"
-                author="Teiva Harsanyi"
-                desc="“You don’t have to be an engineer to be a racing driver, but you do have to have Mechanical Sympathy” - Jackie Steward, 3-time F1 world champion. Applying mechanical sympathy to software means that understanding how the hardware is working can help us in designing more efficient algorithms, data structures, etc. In this talk, we will see concrete examples applied to Go where having a mechanical sympathy can lead in application performance optimization."
+                avatar="talia-nassi.png"
+                title="Testing in Production"
+                author="Talia Nassi"
+                desc="How do you know your feature is working perfectly in production? If something breaks in production, how will you know? Will you wait for a user to report it to you? What do you do when your staging test results do not reflect current production behavior? In order to test proactively as opposed to reactively, try testing in production! You will have an increased accuracy of test results, your tests will run faster due to the elimination of bad data, and you will have higher confidence before releases. This can be accomplished through feature flagging, canary releases, setting up a proper CI/CD pipeline, and data cleanup. You will leave this talk with strategies to mitigate risk, to better your understanding of the steps to get there, and to shift your company’s testing culture, so you can provide the best possible experience to your users. At the end of the day, we don't care if your features work in staging, we care if they work in production."
               />
               <Card
                 position="right"
                 track="Sponsor Track 2"
                 time="11:00 - 12:00"
-                avatar="jaana-dogan.jpg"
-                title="Go Derleyecisini Kendisinden Dinlemek"
-                author="Jaana Dogan"
-                desc="Çoğunluğun sandığının aksine, Go derleyicisini anlamak için derleyiciler konusunda uzman olmaya gerek yoktur. Go araçları kendilerini anlatabilmek ve debug edilebilmelerini sağlamak için birden fazla seçenek sunmaktadır. Go araçlarını ve derleyicisini daha yakından tanıyarak derleyici optimizasyonlarını görebilir, kendi programlarınızı makine kodundan denetleyebilir, modern derleyicilerin nasıl çalıştığını öğrenebilir ve Go diline destek verebilirsiniz. Bu konuşmada hem Go kullanıcılarının hem de geliştiricilerinin günlük hayatlarına katkıda bulunacak birçok araçtan ve yöntemden bahsedeceğiz."
+                avatar="cem-sancak.jpg"
+                title="Canlıdan Go Kesitleri"
+                author="Cem Sancak"
+                desc="Go ile geliştirmeyi keyifli kılan ana mekaniklerden ikisi, eş zamanlı işleme (concurrency) becerileri ve kanallar (channels). Bu konuşmamda üstünde çalıştığım canlı sistemlerde sık sık karşıma çıkan kullanım senaryolarını ve örnek kodları paylaşıyor olacağım. Bana ayrılan zamanın sonunda, dinleyenlere eş zamanlı programlama ile düşünebilmenin servis tasarımlarını nasıl değiştirebileceğini aktarabilmeyi ve Go'yu başarılı kılan parçalar hakkında biraz daha derin bilgi sunmayı hedefliyorum."
               />
             </div>
             <div class="line-center">
@@ -478,10 +462,10 @@
                 position="left"
                 track="Sponsor Track 1"
                 time="12:00 - 13:00"
-                avatar="dave-cheney.jpg"
-                title="High performance JSON parsing"
-                author="Dave Cheney"
-                desc="This is a talk about the design strategies I employed to build a package that can tokenise JSON 8-10x faster than the standard library.In the talk I'll cover the high level design of the package. I'll show how design a API that avoids allocation and unnecessary copying (this is a major contributor to the performance of the library). Finally I'll touch on some of the optimisation decisions in the package and show how they work in sympathy with inlining and bounds check elimination."
+                avatar="kemal-akkoyun.jpg"
+                title="Building Observable Go Services"
+                author="Kemal Akkoyun"
+                desc="In modern days, we run our applications as loosely coupled micro-services on distributed, elastic infrastructure as (mostly) stateless workloads. Under these circumstances, observability has become a key attribute to understand how our applications run and behave in action, in order to provide highly available and resilient service. There exist several observability signals, such as “log”, “metric”, “tracing” and “profiling” that can be collected from a running service, which we can also call pillars of observability. Using these signals, we can create real-time, actionable alerts, create panels where we can monitor applications closely, and perform in-depth analysis to find the root of the systems’ failures. Within the Go and CNCF ecosystem, there are a variety of tools that can collect and make these observable signals useful. During this talk, Kemal will first introduce the tools that can be embedded in the services to make critical services observable, and share the patterns that will enable them to be used efficiently in the applications and services. Moreover,  he will demonstrate how to use these collected signals in real-life scenarios, using tools within the CNCF ecosystem (Loki, Prometheus, OpenTelemetry, Jaeger, Conprof). He also aims to share the methods that are used to build and run applications running under heavy-traffic, and to understand the origin of the problems encountered in running systems."
               />
               <Card
                 position="right"
@@ -497,10 +481,10 @@
                 position="left"
                 track="Sponsor Track 1"
                 time="13:00 - 14:00"
-                avatar="talia-nassi.png"
-                title="Testing in Production"
-                author="Talia Nassi"
-                desc="How do you know your feature is working perfectly in production? If something breaks in production, how will you know? Will you wait for a user to report it to you? What do you do when your staging test results do not reflect current production behavior? In order to test proactively as opposed to reactively, try testing in production! You will have an increased accuracy of test results, your tests will run faster due to the elimination of bad data, and you will have higher confidence before releases. This can be accomplished through feature flagging, canary releases, setting up a proper CI/CD pipeline, and data cleanup. You will leave this talk with strategies to mitigate risk, to better your understanding of the steps to get there, and to shift your company’s testing culture, so you can provide the best possible experience to your users. At the end of the day, we don't care if your features work in staging, we care if they work in production."
+                avatar="teiva-harsanyi.jpg"
+                title="Mechanical Sympathy in Go"
+                author="Teiva Harsanyi"
+                desc="“You don’t have to be an engineer to be a racing driver, but you do have to have Mechanical Sympathy” - Jackie Steward, 3-time F1 world champion. Applying mechanical sympathy to software means that understanding how the hardware is working can help us in designing more efficient algorithms, data structures, etc. In this talk, we will see concrete examples applied to Go where having a mechanical sympathy can lead in application performance optimization."
               />
               <Card
                 position="right"
@@ -566,10 +550,10 @@
                 position="right"
                 track="Sponsor Track 2"
                 time="16:00 - 17:00"
-                avatar="cem-sancak.jpg"
-                title="Canlıdan Go Kesitleri"
-                author="Cem Sancak"
-                desc="Go ile geliştirmeyi keyifli kılan ana mekaniklerden ikisi, eş zamanlı işleme (concurrency) becerileri ve kanallar (channels). Bu konuşmamda üstünde çalıştığım canlı sistemlerde sık sık karşıma çıkan kullanım senaryolarını ve örnek kodları paylaşıyor olacağım. Bana ayrılan zamanın sonunda, dinleyenlere eş zamanlı programlama ile düşünebilmenin servis tasarımlarını nasıl değiştirebileceğini aktarabilmeyi ve Go'yu başarılı kılan parçalar hakkında biraz daha derin bilgi sunmayı hedefliyorum."
+                avatar="jaana-dogan.jpg"
+                title="Go Derleyecisini Kendisinden Dinlemek"
+                author="Jaana Dogan"
+                desc="Çoğunluğun sandığının aksine, Go derleyicisini anlamak için derleyiciler konusunda uzman olmaya gerek yoktur. Go araçları kendilerini anlatabilmek ve debug edilebilmelerini sağlamak için birden fazla seçenek sunmaktadır. Go araçlarını ve derleyicisini daha yakından tanıyarak derleyici optimizasyonlarını görebilir, kendi programlarınızı makine kodundan denetleyebilir, modern derleyicilerin nasıl çalıştığını öğrenebilir ve Go diline destek verebilirsiniz. Bu konuşmada hem Go kullanıcılarının hem de geliştiricilerinin günlük hayatlarına katkıda bulunacak birçok araçtan ve yöntemden bahsedeceğiz."
               />
             </div>
             <div class="line-center">
@@ -589,10 +573,10 @@
                 position="left"
                 track="Sponsor Track 1"
                 time="17:00 - 18:00"
-                avatar="kemal-akkoyun.jpg"
-                title="Building Observable Go Services"
-                author="Kemal Akkoyun"
-                desc="In modern days, we run our applications as loosely coupled micro-services on distributed, elastic infrastructure as (mostly) stateless workloads. Under these circumstances, observability has become a key attribute to understand how our applications run and behave in action, in order to provide highly available and resilient service. There exist several observability signals, such as “log”, “metric”, “tracing” and “profiling” that can be collected from a running service, which we can also call pillars of observability. Using these signals, we can create real-time, actionable alerts, create panels where we can monitor applications closely, and perform in-depth analysis to find the root of the systems’ failures. Within the Go and CNCF ecosystem, there are a variety of tools that can collect and make these observable signals useful. During this talk, Kemal will first introduce the tools that can be embedded in the services to make critical services observable, and share the patterns that will enable them to be used efficiently in the applications and services. Moreover,  he will demonstrate how to use these collected signals in real-life scenarios, using tools within the CNCF ecosystem (Loki, Prometheus, OpenTelemetry, Jaeger, Conprof). He also aims to share the methods that are used to build and run applications running under heavy-traffic, and to understand the origin of the problems encountered in running systems."
+                avatar="dave-cheney.jpg"
+                title="High performance JSON parsing"
+                author="Dave Cheney"
+                desc="This is a talk about the design strategies I employed to build a package that can tokenise JSON 8-10x faster than the standard library.In the talk I'll cover the high level design of the package. I'll show how design a API that avoids allocation and unnecessary copying (this is a major contributor to the performance of the library). Finally I'll touch on some of the optimisation decisions in the package and show how they work in sympathy with inlining and bounds check elimination."
               />
               <Card
                 position="right"
@@ -688,6 +672,11 @@
           <div class="sponsor">
             <a href="https://www.lingaros.com/" target="_blank">
               <img src="/assets/img/linga.png" alt="sponsor" style="padding: 0 25px; max-height: 40px" />
+            </a>
+          </div>
+          <div class="sponsor">
+            <a href="https://useinsider.com/" target="_blank">
+              <img src="/assets/img/insider.png" alt="sponsor" style="padding: 0 20px; max-height: 42px" />
             </a>
           </div>
         </div>

@@ -415,6 +415,28 @@
               </ul>
             </div>
           </div>
+          <div class="col-12 col-md-4 col-lg-3">
+            <div class="profile">
+              <img src="assets/img/speakers/oguz-yarimtepe.jpg" alt="avatar" class="avatar" />
+              <p class="name">Oğuz Yarımtepe</p>
+              <p class="position">Site Reliability Engineer Team Lead, GittiGidiyor</p>
+              <ul class="social">
+                <li>
+                  <a target="_blank" href="https://github.com/oguzy">
+                    <img src="assets/img/github.svg" alt="github" />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/oguzyarimtepe/"
+                  >
+                    <img src="assets/img/linkedin.svg" alt="linkedin" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -531,8 +553,9 @@
                 track="Sponsor Track 2"
                 time="15:00 - 16:00"
                 avatar="pamir-erdem.jpg"
+                avatarSecond="oguz-yarimtepe.jpg"
                 title="Developing Custom Kubernetes Schedulers"
-                author="Pamir Erdem"
+                author="Pamir Erdem, Oğuz Yarımtepe"
                 desc="Without best practices; deploying an application on kubernetes , by no means make it production-grade. Sometime we need to scale our application depending on customers needs. In this talk we are going to develop a custom kubernetes scheduler for high available multi zonal scheduler."
               />
             </div>

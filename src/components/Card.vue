@@ -10,6 +10,7 @@
     />
     <div v-if="author" class="author">
       <img :src="'assets/img/speakers/' + avatar" alt="avatar" class="avatar" />
+      <img v-if="avatarSecond" :src="'assets/img/speakers/' + avatarSecond" alt="avatar" class="avatar" />
       {{ author }}
     </div>
   </div>
@@ -18,7 +19,7 @@
 <script>
 import Detail from "./Detail.vue";
 export default {
-  props: ["position", "title", "author", "desc", "track", "time", "avatar"],
+  props: ["position", "title", "author", "desc", "track", "time", "avatar", "avatarSecond"],
   components: {
     Detail
   }

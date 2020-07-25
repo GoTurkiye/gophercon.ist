@@ -77,7 +77,9 @@
         <h1>{{ $t('header_title') }}</h1>
         <p>{{ $t('header_slogan') }}</p>
         <div class="buttons">
-          <a class="btn btn-custom" href="#ticket">{{ $t('_register') }}</a>
+          <a class="btn btn-custom" target="_blank" href="https://bit.ly/2CLu8wv?ref=gopherconist">{{ $t('_turkish_track') }}</a>
+          <a class="btn btn-custom" target="_blank" href="https://bit.ly/2ZZgOgO?ref=gopherconist">{{ $t('_english_track') }}</a>
+          <a class="btn btn-custom" target="_blank" href="https://discord.gg/MpFEK4a">{{ $t('DISCORD') }}</a>
         </div>
       </div>
     </section>

@@ -208,6 +208,7 @@ header .menu img {
   background: #ee6260;
   transition: 0.5s ease-in-out;
   display: inline-block;
+  margin: 0 5px 0 5px;
 }
 
 .announcement-aboslute .btn-custom:hover {
@@ -738,13 +739,13 @@ header .menu img {
   align-items: center;
   border-radius: 5px;
   margin: 0 5px;
-} 
+}
 
 .sponsors .sponsor a{
   margin: 0;
   padding: 0;
   width: auto;
-} 
+}
 
 .sponsors .sponsor img{
   height: auto;

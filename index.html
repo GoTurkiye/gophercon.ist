@@ -16,7 +16,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <title>GopherCon Turkey | 25th, July 2020</title>
+    <title>GopherCon Turkey | 18-19, December 2021</title>
   </head>
   <body>
     <div class="mobile-menu">
@@ -58,10 +58,11 @@
         </div>
       </div>
       <div class="announcement-aboslute">
-        <h1>25th, July 2020</h1>
+        <h1>18-19, December 2021</h1>
         <p>GopherCon is focused on the Go programming language</p>
         <div class="buttons">
-          <a class="btn btn-custom" href="#">Register</a>
+          <a target="_blank" href="https://kommunity.com/goturkiye/events/gophercon-turkey-1c8eab1d/cfp" class="btn btn-custom">CALL FOR PAPERS</a>
+          <a target="_blank" href="https://kommunity.com/goturkiye/events/gophercon-turkey-1c8eab1d/tickets" class="btn btn-custom">TICKETS</a>
         </div>
       </div>
     </section>
@@ -72,190 +73,29 @@
           <h2 class="title">ABOUT CONFERENCE</h2>
           <h2>
             GopherCon Turkey brings the Turkish Go community together through
-            its events throughout the world. The conference will be held on July
-            25 at Online. 1000+ Gophers will attend the event.
+            its events throughout the world. The conference will be held on December
+            18-19th at Online. 1000+ Gophers will attend the event.
           </h2>
         </div>
       </div>
     </section>
+    <div id="app">
     <section class="speakers" id="speakers">
       <h2 class="title">SPEAKERS</h2>
       <div class="container">
         <div class="row">
-          <div class="col-12 col-md-4 col-lg-3">
+          <div class="col-12 col-md-4 col-lg-3" v-for="speaker in speakers">
             <div class="profile">
-              <img src="assets/img/speakers/teiva-harsanyi.jpg" alt="avatar" class="avatar" />
-              <p class="name">Teiva Harsanyi</p>
-              <p class="position">Software Engineer at Beat</p>
+              <img :src="speaker.avatar"  alt="avatar" class="avatar" />
+              <p class="name">{{ speaker.name }}</p>
+              <p class="position">{{ speaker.bio }} at {{ speaker.company_name }}</p>
               <ul class="social">
-                <li><a target="_blank" href="https://twitter.com/teivah"><img src="assets/img/twitter.svg" alt="twitter"/></a></li>
-                <li><a target="_blank" href="https://github.com/teivah"><img src="assets/img/github.svg" alt="github"/></a></li>
-                <li><a target="_blank" href="https://www.linkedin.com/in/teiva-harsanyi/"><img src="assets/img/linkedin.svg" alt="linkedin"/></a></li>
+                <li><a target="_blank" :href="speaker.social_networks.twitter"><img src="assets/img/twitter.svg" alt="twitter"/></a></li>
+                <li><a target="_blank" :href="speaker.social_networks.github"><img src="assets/img/github.svg" alt="github"/></a></li>
+                <li><a target="_blank" :href="speaker.social_networks.linkedin" alt="linkedin"/></a></li>
               </ul>
             </div>
           </div>
-          <div class="col-12 col-md-4 col-lg-3">
-            <div class="profile">
-              <img src="assets/img/speakers/jaana-dogan.jpg" alt="avatar" class="avatar" />
-              <p class="name">Jaana Dogan</p>
-              <p class="position">Staff Engineer, Google</p>
-              <ul class="social">
-                <li><a target="_blank" href="https://twitter.com/rakyll"><img src="assets/img/twitter.svg" alt="twitter"/></a></li>
-                <li><a target="_blank" href="https://github.com/rakyll"><img src="assets/img/github.svg" alt="github"/></a></li>
-                <li><a target="_blank" href="https://www.linkedin.com/in/jaana-dogan-9079ba1aa/"><img src="assets/img/linkedin.svg" alt="linkedin"/></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 col-lg-3">
-            <div class="profile">
-              <img src="assets/img/speakers/dave-cheney.jpg" alt="avatar" class="avatar" />
-              <p class="name">Dave Cheney</p>
-              <p class="position">GitHub</p>
-              <ul class="social">
-                <li><a target="_blank" href="https://twitter.com/davecheney"><img src="assets/img/twitter.svg" alt="twitter"/></a></li>
-                <li><a target="_blank" href="https://github.com/davecheney"><img src="assets/img/github.svg" alt="github"/></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 col-lg-3">
-            <div class="profile">
-              <img src="assets/img/speakers/ibrahim-serdar-acikgoz.jpg" alt="avatar" class="avatar" />
-              <p class="name">Ibrahim Serdar Açıkgöz</p>
-              <p class="position">Software Engineer at Mattermost</p>
-              <ul class="social">
-                <li><a target="_blank" href="https://twitter.com/isacikgoz"><img src="assets/img/twitter.svg" alt="twitter"/></a></li>
-                <li><a target="_blank" href="https://github.com/isacikgoz"><img src="assets/img/github.svg" alt="github"/></a></li>
-                <li><a target="_blank" href="https://www.linkedin.com/in/isacikgoz/"><img src="assets/img/linkedin.svg" alt="linkedin"/></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 col-lg-3">
-            <div class="profile">
-              <img src="assets/img/speakers/talia-nassi.png" alt="avatar" class="avatar" />
-              <p class="name">Talia Nassi</p>
-              <p class="position">Developer Advocate at Split.io</p>
-              <ul class="social">
-                <li><a target="_blank" href="https://twitter.com/talia_nassi"><img src="assets/img/twitter.svg" alt="twitter"/></a></li>
-                <li><a target="_blank" href="https://www.linkedin.com/in/talianassi/"><img src="assets/img/linkedin.svg" alt="linkedin"/></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 col-lg-3">
-            <div class="profile">
-              <img src="assets/img/speakers/oguzhan-yilmaz.jpeg" alt="avatar" class="avatar" />
-              <p class="name">Oğuzhan Yılmaz</p>
-              <p class="position">CTO at Masomo</p>
-              <ul class="social">
-                <li><a target="_blank" href="https://twitter.com/c1982"><img src="assets/img/twitter.svg" alt="twitter"/></a></li>
-                <li><a target="_blank" href="https://github.com/c1982"><img src="assets/img/github.svg" alt="github"/></a></li>
-                <li><a target="_blank" href="https://tr.linkedin.com/in/oguzhanyilmaz"><img src="assets/img/linkedin.svg" alt="linkedin"/></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 col-lg-3">
-            <div class="profile">
-              <img src="assets/img/speakers/fahri-yardimci.jpg" alt="avatar" class="avatar" />
-              <p class="name">Fahri Yardımcı</p>
-              <p class="position">Site Reliability Engineer at Atlassian</p>
-              <ul class="social">
-                <li><a target="_blank" href="https://twitter.com/FahriYardimci"><img src="assets/img/twitter.svg" alt="twitter"/></a></li>
-                <li><a target="_blank" href="https://github.com/ffahri"><img src="assets/img/github.svg" alt="github"/></a></li>
-                <li><a target="_blank" href="https://www.linkedin.com/in/fahriyardimci/"><img src="assets/img/linkedin.svg" alt="linkedin"/></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 col-lg-3">
-            <div class="profile">
-              <img src="assets/img/speakers/erhan-yakut.jpeg" alt="avatar" class="avatar" />
-              <p class="name">Erhan Yakut</p>
-              <p class="position">Team Lead at ICS Defense</p>
-              <ul class="social">
-                <li><a target="_blank" href="https://twitter.com/yakuter"><img src="assets/img/twitter.svg" alt="twitter"/></a></li>
-                <li><a target="_blank" href="https://github.com/yakuter"><img src="assets/img/github.svg" alt="github"/></a></li>
-                <li><a target="_blank" href="https://www.linkedin.com/in/erhan-yakut/"><img src="assets/img/linkedin.svg" alt="linkedin"/></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 col-lg-3">
-            <div class="profile">
-              <img src="assets/img/speakers/amit-mishra.jpg" alt="avatar" class="avatar" />
-              <p class="name">Amit Mishra</p>
-              <p class="position">Lead Software Architect</p>
-              <ul class="social">
-                <li><a target="_blank" href="https://www.linkedin.com/in/amitkailashmishra/"><img src="assets/img/linkedin.svg" alt="linkedin"/></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 col-lg-3">
-            <div class="profile">
-              <img src="assets/img/speakers/pamir-erdem.jpg" alt="avatar" class="avatar" />
-              <p class="name">Pamir Erdem</p>
-              <p class="position">Microsoft - Azure Specialist</p>
-              <ul class="social">
-                <li><a target="_blank" href="https://github.com/Pamir?tab=followers"><img src="assets/img/github.svg" alt="github"/></a></li>
-                <li><a target="_blank" href="https://www.linkedin.com/in/pamirerdem/"><img src="assets/img/linkedin.svg" alt="linkedin"/></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 col-lg-3">
-            <div class="profile">
-              <img src="assets/img/speakers/ekta-garg.jpg" alt="avatar" class="avatar" />
-              <p class="name">Ekta Garg</p>
-              <p class="position">Grofers & SDE</p>
-              <ul class="social">
-                <li><a target="_blank" href="https://twitter.com/_ektagarg"><img src="assets/img/twitter.svg" alt="twitter"/></a></li>
-                <li><a target="_blank" href="https://github.com/ektagarg"><img src="assets/img/github.svg" alt="github"/></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 col-lg-3">
-            <div class="profile">
-              <img src="assets/img/speakers/cem-sancak.jpg" alt="avatar" class="avatar" />
-              <p class="name">Cem Sancak</p>
-              <p class="position">Big Data Engineer at Insider</p>
-              <ul class="social">
-                <li><a target="_blank" href="https://www.linkedin.com/in/cem-sancak-53294697/"><img src="assets/img/linkedin.svg" alt="linkedin"/></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 col-lg-3">
-            <div class="profile">
-              <img src="assets/img/speakers/endre-simo.jpg" alt="avatar" class="avatar" />
-              <p class="name">Endre Simo</p>
-              <p class="position">Senior Software Developer at @Reea</p>
-              <ul class="social">
-                <li><a target="_blank" href="https://twitter.com/simo_endre"><img src="assets/img/twitter.svg" alt="twitter"/></a></li>
-                <li><a target="_blank" href="https://github.com/esimov"><img src="assets/img/github.svg" alt="github"/></a></li>
-                <li><a target="_blank" href="https://www.linkedin.com/in/endre-simo/?originalSubdomain=ro"><img src="assets/img/linkedin.svg" alt="linkedin"/></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 col-lg-3">
-            <div class="profile">
-              <img src="assets/img/speakers/kemal-akkoyun.jpg" alt="avatar" class="avatar" />
-              <p class="name">Kemal Akkoyun</p>
-              <p class="position">Senior Software Developer at @Reea</p>
-              <ul class="social">
-                <li><a target="_blank" href="https://twitter.com/kkakkoyun"><img src="assets/img/twitter.svg" alt="twitter"/></a></li>
-                <li><a target="_blank" href="https://github.com/kakkoyun"><img src="assets/img/github.svg" alt="github"/></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 col-lg-3">
-            <div class="profile">
-              <img src="assets/img/speakers/huseyin-guner.jpeg" alt="avatar" class="avatar" />
-              <p class="name">Hüseyin Güner</p>
-              <p class="position">Software Developer</p>
-              <ul class="social">
-                <li><a target="_blank" href="https://twitter.com/husguner"><img src="assets/img/twitter.svg" alt="twitter"/></a></li>
-                <li><a target="_blank" href="https://github.com/gunerhuseyin"><img src="assets/img/github.svg" alt="github"/></a></li>
-                <li><a target="_blank" href="https://www.linkedin.com/in/huseyin-guner/?originalSubdomain=tr"><img src="assets/img/linkedin.svg" alt="linkedin"/></a></li>
-              </ul>
-            </div>
-          </div>
-
-
-
         </div>
       </div>
     </section>
@@ -271,48 +111,42 @@
           <div class="feed">
             <div class="line-center">
               <div class="track-title flex1 hide-mobile">
-                <p>Sponsor Track 1</p>
+                <p>Turkish Track</p>
                 <img class="arrow" src="assets/img/arrow.svg" alt="arrow" />
               </div>
               <div class="flex1 flex-center">
-                <div class="timer">10:00 - Start</div>
+                <div class="timer">11:00 - Start</div>
               </div>
               <div class="track-title flex1 hide-mobile">
-                <p>Sponsor Track 2</p>
+                <p>English Track</p>
                 <img class="arrow" src="assets/img/arrow.svg" alt="arrow" />
               </div>
             </div>
             <div class="line-center">
               <div class="custom-card custom-card-left flex1 mt-5">
-                <div class="timer timer-absolute">10:00 - 10:40</div>
-                <pre>Sponsor Track 1</pre>
-                <p class="title">Mechanical Sympathy in Go</p>
-                <p class="description">
-                  “You don’t have to be an engineer to be a racing driver, but you do have to have Mechanical Sympathy”<br />- Jackie Steward, 3-time F1 world champion.
-                </p>
+                <div class="timer timer-absolute">TBA</div>
+                <pre>Turkish Track</pre>
+                <p class="title">TBA</p>
                 <div class="author">
                   <img
-                    src="assets/img/speakers/teiva-harsanyi.jpg"
+                          src="https://img.icons8.com/external-bearicons-glyph-bearicons/64/000000/external-User-essential-collection-bearicons-glyph-bearicons.png"
                     alt="avatar"
                     class="avatar"
                   />
-                  Teiva Harsanyi
+                  TBA
                 </div>
               </div>
               <div class="custom-card custom-card-right flex1 mt-5">
-                <div class="timer timer-absolute">10:00 - 10:40</div>
-                <pre>Sponsor Track 2</pre>
-                <p class="title">Go Derleyecisini Kendisinden Dinlemek</p>
-                <p class="description">
-                  Bu konuşmada hem Go kullanıcılarının hem de geliştiricilerinin günlük hayatlarına katkıda bulunacak bir çok araçtan ve yöntemden bahsedeceğiz.
-                </p>
+                <div class="timer timer-absolute"> TBA </div>
+                <pre>English Track</pre>
+                <p class="title">TBA</p>
                 <div class="author">
                   <img
-                    src="assets/img/speakers/jaana-dogan.jpg"
+                    src="https://img.icons8.com/external-bearicons-glyph-bearicons/64/000000/external-User-essential-collection-bearicons-glyph-bearicons.png"
                     alt="avatar"
                     class="avatar"
                   />
-                  Jaana Dogan
+                  TBA
                 </div>
               </div>
             </div>
@@ -324,233 +158,8 @@
               </div>
             </div> -->
             <div class="line-center">
-              <div class="custom-card custom-card-left flex1 mt-5">
-                <div class="timer timer-absolute">11:00 - 11:45</div>
-                <pre>Sponsor Track 1</pre>
-                <p class="title">High performance JSON parsing</p>
-                <p class="description">
-                  This is a talk about the design strategies I employed to build a package that can tokenise JSON 8-10x faster than the standard library.
-                </p>
-                <div class="author">
-                  <img
-                    src="assets/img/speakers/dave-cheney.jpg"
-                    alt="avatar"
-                    class="avatar"
-                  />
-                  Dave Cheney
-                </div>
-              </div>
-              <div class="custom-card custom-card-right flex1 mt-5">
-                <div class="timer timer-absolute">11:00 - 11:30</div>
-                <pre>Sponsor Track 2</pre>
-                <p class="title">Exploiting Go Struct Tags</p>
-                <p class="description">
-                  We all use Go struct tags especially when working with JSON, YAML, etc. But have you ever wondered how they work?
-                </p>
-                <div class="author">
-                  <img
-                    src="assets/img/speakers/ibrahim-serdar-acikgoz.jpg"
-                    alt="avatar"
-                    class="avatar"
-                  />
-                  Ibrahim Serdar Açıkgöz
-                </div>
-              </div>
-            </div>
-            <div class="line-center">
-              <div class="custom-card custom-card-left flex1 mt-5">
-                <div class="timer timer-absolute">12:00 - 12:40</div>
-                <pre>Sponsor Track 1</pre>
-                <p class="title">Testing in Production</p>
-                <p class="description">
-                  How do you know your feature is working perfectly in production? If something breaks in production, how will you know?
-                </p>
-                <div class="author">
-                  <img
-                    src="assets/img/speakers/talia-nassi.png"
-                    alt="avatar"
-                    class="avatar"
-                  />
-                  Talia Nassi
-                </div>
-              </div>
-              <div class="custom-card custom-card-right flex1 mt-5">
-                <div class="timer timer-absolute">12:00 - 12:40</div>
-                <pre>Sponsor Track 2</pre>
-                <p class="title">Go Performans Rehberi</p>
-                <p class="description">
-                  Go programlama dili her ne kadar performans odaklı olsada yazılım geliştirirken vereceğimiz kararlar bunu çok etkiliyor.
-                </p>
-                <div class="author">
-                  <img
-                    src="assets/img/speakers/oguzhan-yilmaz.jpeg"
-                    alt="avatar"
-                    class="avatar"
-                  />
-                  Oğuzhan YILMAZ
-                </div>
-              </div>
-            </div>
-            <div class="line-center">
-              <div class="custom-card custom-card-left flex1 mt-5">
-                <div class="timer timer-absolute">13:00 - 13:35</div>
-                <pre>Sponsor Track 1</pre>
-                <p class="title">Distributed Tracing on Golang using OpenTelemetry</p>
-                <p class="description">
-                  In the microservices era, monitoring applications become harder due to distributed and asynchronous data flow, therefore quickly identifying errors and performance problems is crucial.
-                </p>
-                <div class="author">
-                  <img
-                    src="assets/img/speakers/fahri-yardimci.jpg"
-                    alt="avatar"
-                    class="avatar"
-                  />
-                  Fahri Yardımcı
-                </div>
-              </div>
-              <div class="custom-card custom-card-right flex1 mt-5">
-                <div class="timer timer-absolute">13:00 - 13:40</div>
-                <pre>Sponsor Track 2</pre>
-                <p class="title">Go Projelerinde Clean Code Mimarisinin Uygulanması</p>
-                <p class="description">
-                  Geçmişten günümüze yazılım alanında birçok şey değişti; programlama dilleri, frameworkler, sistemler... Bunların esasında birer araç olduğunu düşünürsek aslında değişmeleri gayet normal.
-                </p>
-                <div class="author">
-                  <img
-                    src="assets/img/speakers/erhan-yakut.jpeg"
-                    alt="avatar"
-                    class="avatar"
-                  />
-                  Erhan Yakut
-                </div>
-              </div>
-            </div>
-            <div class="line-center">
-              <div class="custom-card custom-card-left flex1 mt-5">
-                <div class="timer timer-absolute">14:00 - 14:40</div>
-                <pre>Sponsor Track 1</pre>
-                <p class="title">How goLang enabled us to build a platform to live stream SuperBowl 2020 to millions of concurrent users!</p>
-                <p class="description">
-                  I would like to share our story and challenges we face everyday while streaming contents.
-                </p>
-                <div class="author">
-                  <img
-                    src="assets/img/speakers/amit-mishra.jpg"
-                    alt="avatar"
-                    class="avatar"
-                  />
-                  Amit Mishra
-                </div>
-              </div>
-              <div class="custom-card custom-card-right flex1 mt-5">
-                <div class="timer timer-absolute">14:00 - 14:30</div>
-                <pre>Sponsor Track 2</pre>
-                <p class="title">Developing Custom Kubernetes Schedulers</p>
-                <p class="description">
-                  Without best practices; deploying an application on kubernetes , by no means make it production-grade. Sometime we need to scale our application depending on customers needs.
-                </p>
-                <div class="author">
-                  <img
-                    src="assets/img/speakers/pamir-erdem.jpg"
-                    alt="avatar"
-                    class="avatar"
-                  />
-                  Pamir Erdem
-                </div>
-              </div>
-            </div>
-            <div class="line-center">
-              <div class="custom-card custom-card-left flex1 mt-5">
-                <div class="timer timer-absolute">15:00 - 15:15</div>
-                <pre>Sponsor Track 1</pre>
-                <p class="title">Running Go in browsers using WASM</p>
-                <p class="description">
-                  Web Assembly AKA WASM is a new way of running high-level languages into the browsers. Cases where you need to do complex computations like gaming, 3d rendering, AI stuff, etc in browser using any language of your choice.
-                </p>
-                <div class="author">
-                  <img
-                    src="assets/img/speakers/ekta-garg.jpg"
-                    alt="avatar"
-                    class="avatar"
-                  />
-                  Ekta Garg
-                </div>
-              </div>
-              <div class="custom-card custom-card-right flex1 mt-5">
-                <div class="timer timer-absolute">15:00 - 15:40</div>
-                <pre>Sponsor Track 2</pre>
-                <p class="title">Canlıdan Go Kesitleri</p>
-                <p class="description">
-                  Go ile geliştirmeyi keyifli kılan ana mekaniklerden ikisi eş zamanlı işleme becerileri ve kanallar. Bu konuşmamda üstünde calıştığım canlı sistemlerde sık sık karşıma çıkan kullanım senaryolarını ve örnek kodlari paylaşıyor olacağım.
-                </p>
-                <div class="author">
-                  <img
-                    src="assets/img/speakers/cem-sancak.jpg"
-                    alt="avatar"
-                    class="avatar"
-                  />
-                  Cem Sancak
-                </div>
-              </div>
-            </div>
-            <div class="line-center">
-              <div class="custom-card custom-card-left flex1 mt-5">
-                <div class="timer timer-absolute">15:20 - 15:50</div>
-                <pre>Sponsor Track 1</pre>
-                <p class="title">Face detection in Go and Webassembly</p>
-                <p class="description">
-                  Year-by-year the Go language is evolving as it increases the projects and libraries built around it, even though the Go ecosystem is still well behind its competitors in terms of computer vision, machine learning, data analysis etc.
-                </p>
-                <div class="author">
-                  <img
-                    src="assets/img/speakers/endre-simo.jpg"
-                    alt="avatar"
-                    class="avatar"
-                  />
-                  Endre Simo
-                </div>
-              </div>
-              <div
-                class="empty-card custom-card-right flex1 mt-5 hide-mobile"
-              ></div>
-            </div>
-            <div class="line-center">
-              <div class="custom-card custom-card-left flex1 mt-5">
-                <div class="timer timer-absolute">16:00 - 16:40</div>
-                <pre>Sponsor Track 2</pre>
-                <p class="title">Gözlemlenebilir Go servisleri inşa etmek</p>
-                <p class="description">
-                  Günümüzde, Go uygulamalarımızı dağıttık, birbirine gevşek şekilde bağlı mikro-servisler olarak inşa edip, esnek ve fazlasıyla değişken altyapı üzerinde kısa yaşam döngüleri olan iş yükleri olarak koşturuyoruz.
-                </p>
-                <div class="author">
-                  <img
-                    src="assets/img/speakers/kemal-akkoyun.jpg"
-                    alt="avatar"
-                    class="avatar"
-                  />
-                  Kemal Akkoyun
-                </div>
-              </div>
-              <div class="custom-card custom-card-right flex1 mt-5">
-                <div class="timer timer-absolute">16:00 - 17:10</div>
-                <pre>Sponsor Track 2</pre>
-                <p class="title">Go ile 1.5M Throughput</p>
-                <p class="description">
-                  Konuşma genel olarak Trendyolda Java-Go geçişi ile elde ettiğimiz kaynak kazanımı, yüksek scale ölçeği, yaşadığımız zorluklar, karşılaştığımız buglar, çözüm yöntemlerimiz, profiling ve go ile alakalı deneyimlerin konu alacağı, go dili ve internalları hakkında olacak.
-                </p>
-                <div class="author">
-                  <img
-                    src="assets/img/speakers/huseyin-guner.jpeg"
-                    alt="avatar"
-                    class="avatar"
-                  />
-                  Hüseyin Güner
-                </div>
-              </div>
-            </div>
-            <div class="line-center">
               <div class="flex1 flex-center">
-                <div class="timer mt-5">17:10 - Finish</div>
+                <div class="timer mt-5">18:00 - Finish</div>
               </div>
             </div>
           </div>
@@ -566,44 +175,18 @@
       <h2 class="title">TICKETS</h2>
       <div class="container">
         <div class="tables">
-          <div class="table mt-4">
+          <div class="table mt-4" v-for="ticket in tickets">
             <img
               src="assets/img/gopher-03.png"
               alt="gopher"
               class="gopher-free"
             />
-            <div class="name">COME AND JOIN!</div>
-            <p class="price">Free</p>
-            <ul>
-              <li>Ticket guarrantees admission</li>
-            </ul>
-            <a href="#" class="buy">REGISTER</a>
-          </div>
-          <div class="table table-red">
-            <img
-              src="assets/img/gopher-04.png"
-              alt="gopher"
-              class="gopher-support"
-            />
-            <div class="name">SUPPORT CHARITY</div>
-            <p class="price"><small>TRY</small>0</p>
-            <ul>
-              <li>Ticket guarrantees admission</li>
-            </ul>
-            <a href="#" class="buy buy-red">BUY NOW</a>
-          </div>
-          <div class="table mt-4">
-            <img
-              src="assets/img/gopher-05.png"
-              alt="gopher"
-              class="gopher-community"
-            />
-            <div class="name">SUPPORT CHARITY</div>
-            <p class="price"><small>TRY</small>0</p>
-            <ul>
-              <li>Ticket guarrantees admission</li>
-            </ul>
-            <a href="#" class="buy">BUY NOW</a>
+            <div class="name">{{ ticket.name }}</div>
+            <p v-if="ticket.price == 0" class="price"> Free </p>
+            <p v-if="ticket.price != 0" class="price"> {{ ticket.price }} TL </p>
+            <div class="mt-4" v-html="ticket.description"></div>
+
+            <a href="https://kommunity.com/goturkiye/events/gophercon-turkey-1c8eab1d/tickets" class="buy">REGISTER</a>
           </div>
         </div>
       </div>
@@ -617,12 +200,8 @@
       <h2 class="title">SPONSORS</h2>
       <div class="container">
         <div class="owl-carousel owl-theme">
-          <div class="sponsor">
-            <a href="#"
-              ><img
-                src="https://itsmoneo.com/assets/image/logo.svg"
-                alt="sponsor"
-            /></a>
+          <div class="sponsor" v-for="sponsor in sponsors">
+            <a :href="sponsor.link"><img :src="sponsor.logo"  alt="sponsor"/></a>
           </div>
         </div>
         <p class="info">
@@ -630,14 +209,14 @@
           <br />
           Please
           <a
-            href="mailto:support@kommunity.com?Subject=GopherCon 2020 Sponsorship"
+            href="mailto:sponsor@gopher.istanbul"
             >get in touch</a
           >
           with us for sponsorship options!
         </p>
       </div>
     </section>
-
+    </div> <!-- TODO: add this div to end of the schedule section-->
     <footer>
       <div class="container">
         <div class="row">
@@ -682,6 +261,9 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.5/lodash.min.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>

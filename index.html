@@ -123,30 +123,34 @@
               </div>
             </div>
             <div class="line-center">
-              <div class="custom-card custom-card-left flex1 mt-5">
-                <div class="timer timer-absolute">TBA</div>
-                <pre>Turkish Track</pre>
-                <p class="title">TBA</p>
-                <div class="author">
-                  <img
-                          src="https://img.icons8.com/external-bearicons-glyph-bearicons/64/000000/external-User-essential-collection-bearicons-glyph-bearicons.png"
-                    alt="avatar"
-                    class="avatar"
-                  />
-                  TBA
+              <div class="turkish-tracks">
+                <div v-for="track in turkishTracks" class="custom-card custom-card-left flex1 mt-5">
+                  <div class="timer timer-absolute">{{ track.start }} - {{ track.end }}</div>
+                  <pre>Turkish Track</pre>
+                  <p class="title">{{ track.title }}</p>
+                  <div class="author">
+                    <img
+                            :src="track.avatar"
+                      alt="avatar"
+                      class="avatar"
+                    />
+                    {{ track.speakerName }}
+                  </div>
                 </div>
               </div>
-              <div class="custom-card custom-card-right flex1 mt-5">
-                <div class="timer timer-absolute"> TBA </div>
-                <pre>English Track</pre>
-                <p class="title">TBA</p>
-                <div class="author">
-                  <img
-                    src="https://img.icons8.com/external-bearicons-glyph-bearicons/64/000000/external-User-essential-collection-bearicons-glyph-bearicons.png"
-                    alt="avatar"
-                    class="avatar"
-                  />
-                  TBA
+              <div class="english-tracks">
+                <div v-for="track in englishTracks" class="custom-card custom-card-right flex1 mt-5">
+                  <div class="timer timer-absolute"> {{ track.start }} - {{ track.end }} </div>
+                  <pre>English Track</pre>
+                  <p class="title">{{ track.title }}</p>
+                  <div class="author">
+                    <img
+                      :src="track.avatar"
+                      alt="avatar"
+                      class="avatar"
+                    />
+                    {{ track.speakerName }}
+                  </div>
                 </div>
               </div>
             </div>

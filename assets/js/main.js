@@ -50,7 +50,8 @@ var App = new Vue({
         sessions: [],
         tickets: [],
         sponsors: [],
-        tracks: []
+        turkishTracks: [],
+        englishTracks: []
     },
     mounted() {
         this.getData()
@@ -58,11 +59,27 @@ var App = new Vue({
     methods: {
         getData: function () {
             axios.get(API_URL).then(response => {
-                  console.log(response.data.data)
                   this.speakers = response.data.data.speakers;
+
                   this.sponsors = response.data.data.sponsors;
-                  console.log("schedule:",response.data.data.schedule );
-                  this.tracks = response.data.data.schedule[0].tracks;
+
+                  const tracks = response.data.data.schedule[0].tracks;
+
+                  this.englishTracks = tracks[0].sessions.map(session => ({
+                    start: session.start,
+                    end: session.end,
+                    title: session.talks[0].title,
+                    speakerName: _.filter(this.speakers, _.matches({ 'slug': session.talks[0].speakers[0] }))[0].name,
+                    avatar: _.filter(this.speakers, _.matches({ 'slug': session.talks[0].speakers[0] }))[0].avatar,
+                  }));
+                  
+                  this.turkishTracks = tracks[1].sessions.map(session => ({
+                    start: session.start,
+                    end: session.end,
+                    title: session.talks[0].title,
+                    speakerName: _.filter(this.speakers, _.matches({ 'slug': session.talks[0].speakers[0] }))[0]?.name,
+                    avatar: _.filter(this.speakers, _.matches({ 'slug': session.talks[0].speakers[0] }))[0]?.avatar,
+                  }));
                 }
             );
 

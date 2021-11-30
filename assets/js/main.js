@@ -50,8 +50,20 @@ var App = new Vue({
         sessions: [],
         tickets: [],
         sponsors: [],
-        turkishTracks: [],
-        englishTracks: []
+        turkishTracks: [{
+          start: 0,
+          end: 0,
+          title: '',
+          speakerName: '',
+          avatar: ''
+        }],
+        englishTracks: [{
+          start: 0,
+          end: 0,
+          title: '',
+          speakerName: '',
+          avatar: ''
+        }]
     },
     mounted() {
         this.getData()

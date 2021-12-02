@@ -51,14 +51,14 @@ var App = new Vue({
         tickets: [],
         mainsponsors: [
         {
-        link: "https://www.youtube.com/channel/UCUBiayLMggBAsiYvGLzQJ5w",
-        logo: "assets/img/sponsors/trendyoltech.png"
+        link: '',
+        logo: ''
         }
         ],
         platinumsponsors: [
         {
-        link: "https://bestcloudfor.me/",
-        logo: "assets/img/sponsors/bestcloudforme.png"
+        link: '',
+        logo: ''
         }
         ],
         turkishTracks: [{
@@ -95,7 +95,7 @@ var App = new Vue({
                     speakerName: _.filter(this.speakers, _.matches({ 'slug': session.talks[0].speakers[0] }))[0].name,
                     avatar: _.filter(this.speakers, _.matches({ 'slug': session.talks[0].speakers[0] }))[0].avatar,
                   }));
-                  
+
                   this.turkishTracks = tracks[1].sessions.map(session => ({
                     start: session.start,
                     end: session.end,
@@ -104,7 +104,18 @@ var App = new Vue({
                     avatar: _.filter(this.speakers, _.matches({ 'slug': session.talks[0].speakers[0] }))[0]?.avatar,
                   }));
 
+                  this.mainsponsors = [
+                      {
+                      link: "https://www.youtube.com/channel/UCUBiayLMggBAsiYvGLzQJ5w",
+                      logo: "assets/img/sponsors/trendyoltech.png"
+                      }
+                    ]
 
+                   this.platinumsponsors =  [
+                   {
+                   link: 'https://bestcloudfor.me/',
+                   logo: "assets/img/sponsors/bestcloudforme.png"
+                   }]
                 }
             );
 

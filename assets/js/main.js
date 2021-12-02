@@ -49,7 +49,18 @@ var App = new Vue({
         speakers: [],
         sessions: [],
         tickets: [],
-        sponsors: [],
+        mainsponsors: [
+        {
+        "link": "https://www.youtube.com/channel/UCUBiayLMggBAsiYvGLzQJ5w",
+        "logo": "assets/img/sponsors/trendyoltech.png"
+        },
+        ],
+        platinumsponsors: [
+        {
+        "link": "https://bestcloudfor.me/",
+        "logo": "assets/img/sponsors/bestcloudforme.png",
+        },
+        ],
         turkishTracks: [{
           start: 0,
           end: 0,

@@ -51,14 +51,14 @@ var App = new Vue({
         tickets: [],
         mainsponsors: [
         {
-        "link": "https://www.youtube.com/channel/UCUBiayLMggBAsiYvGLzQJ5w",
-        "logo": "assets/img/sponsors/trendyoltech.png"
+        link: "https://www.youtube.com/channel/UCUBiayLMggBAsiYvGLzQJ5w",
+        logo: "assets/img/sponsors/trendyoltech.png"
         }
         ],
         platinumsponsors: [
         {
-        "link": "https://bestcloudfor.me/",
-        "logo": "assets/img/sponsors/bestcloudforme.png"
+        link: "https://bestcloudfor.me/",
+        logo: "assets/img/sponsors/bestcloudforme.png"
         }
         ],
         turkishTracks: [{
@@ -103,6 +103,8 @@ var App = new Vue({
                     speakerName: _.filter(this.speakers, _.matches({ 'slug': session.talks[0].speakers[0] }))[0]?.name,
                     avatar: _.filter(this.speakers, _.matches({ 'slug': session.talks[0].speakers[0] }))[0]?.avatar,
                   }));
+
+
                 }
             );
 

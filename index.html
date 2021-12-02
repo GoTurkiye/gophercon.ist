@@ -201,10 +201,19 @@
         alt="gopher"
         class="gophers hide-mobile"
       />
-      <h2 class="title">SPONSORS</h2>
+      <h2 class="title">MAIN SPONSOR</h2>
       <div class="container">
         <div class="owl-carousel owl-theme">
-          <div class="sponsor" v-for="sponsor in sponsors">
+          <div class="sponsor" v-for="sponsor in mainsponsors">
+            <a :href="sponsor.link"><img :src="sponsor.logo"  alt="sponsor"/></a>
+          </div>
+        </div>
+      </div>
+      <br/><br/><br/>
+      <h2 class="title">PLATINUM SPONSORS</h2>
+      <div class="container" >
+        <div class="owl-carousel owl-theme" v-for="sponsor in platinumsponsors">
+          <div class="sponsor">
             <a :href="sponsor.link"><img :src="sponsor.logo"  alt="sponsor"/></a>
           </div>
         </div>
@@ -213,8 +222,8 @@
           <br />
           Please
           <a
-            href="mailto:sponsor@gopher.istanbul"
-            >get in touch</a
+                  href="mailto:sponsor@gopher.istanbul"
+          >get in touch</a
           >
           with us for sponsorship options!
         </p>

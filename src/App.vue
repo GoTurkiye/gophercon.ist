@@ -112,33 +112,29 @@
         </div>
         <h1>{{ $t("header_title") }}</h1>
         <p>{{ $t("header_slogan") }}</p>
-        <div class="buttons row">
+        <div class="buttons">
           <br />
           <br />
-          <div class="col-12 col-md-6">
-            <a
-              class="btn btn-custom"
-              target="_blank"
-              href="https://www.youtube.com/watch?v=Mx-Vu0dK49k"
-              ><img
-                src="/assets/img/youtube.png"
-                style="width: 40px; margin-right: 10px"
-              />
-              {{ $t("_turkish_track") }}</a
-            >
-          </div>
-          <div class="col-12 col-md-6">
-            <a
-              class="btn btn-custom"
-              target="_blank"
-              href="https://www.youtube.com/watch?v=dEJ-bsNFKSI"
-              ><img
-                src="/assets/img/youtube.png"
-                style="width: 40px; margin-right: 10px"
-              />
-              {{ $t("_english_track") }}</a
-            >
-          </div>
+          <a
+            class="btn btn-custom"
+            target="_blank"
+            href="https://www.youtube.com/watch?v=Mx-Vu0dK49k"
+            ><img
+              src="/assets/img/youtube.png"
+              style="width: 40px; margin-right: 10px"
+            />
+            {{ $t("_turkish_track") }}</a
+          >
+          <a
+            class="btn btn-custom"
+            target="_blank"
+            href="https://www.youtube.com/watch?v=dEJ-bsNFKSI"
+            ><img
+              src="/assets/img/youtube.png"
+              style="width: 40px; margin-right: 10px"
+            />
+            {{ $t("_english_track") }}</a
+          >
         </div>
       </div>
     </section>
@@ -198,7 +194,7 @@
                 <img class="arrow" src="/assets/img/arrow.svg" alt="arrow" />
               </div>
               <div class="flex1 flex-center">
-                <div class="timer">11:00 - {{ $t("Start") }}</div>
+                <div class="timer">10:30 - {{ $t("Start") }}</div>
               </div>
               <div class="track-title flex1 hide-mobile">
                 <p>{{ $t("Sponsor Track 2") }}</p>

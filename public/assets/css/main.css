@@ -1239,7 +1239,6 @@ footer .logo img {
   }
 
   .announcement-aboslute .buttons {
-    display: flex;
     justify-content: center;
     align-items: center;
     width: 80%;

@@ -519,10 +519,10 @@ export default {
     //
     // this.$i18n.locale = lang
 
-    var lang = this.$route.query.language;
+    var lang = "en";
 
-    if (lang === "" || lang == null) {
-      lang = "en";
+    if (this.$route.query.language === "tr") {
+      lang = "tr";
     }
 
     this.$i18n.locale = lang;

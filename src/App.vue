@@ -1,28 +1,24 @@
 <template>
   <div id="app">
-    <div class="mobile-menu">
+    <div class="mobile-menu" v-show="showMenu">
       <ul class="menu">
-        <li>
-          <a href="#about">{{ $t("About") }}</a>
-        </li>
-        <li>
-          <a href="#speakers">{{ $t("Speakers") }}</a>
-        </li>
-        <li>
-          <a href="#schedule">{{ $t("Schedule") }}</a>
-        </li>
-        <li>
-          <a href="#sponsors">{{ $t("Sponsors") }}</a>
-        </li>
-        <li>
-          <a href="#ticket" class="button">{{ $t("Tickets") }}</a>
-        </li>
+        <li><a href="#about" @click="showMenu = !showMenu">{{ $t("About") }}</a></li>
+        <li><a href="#speakers" @click="showMenu = !showMenu">{{ $t("Speakers") }}</a></li>
+        <li><a href="#schedule" @click="showMenu = !showMenu">{{ $t("Schedule") }}</a></li>
+        <li><a href="#sponsors" @click="showMenu = !showMenu">{{ $t("Sponsors") }}</a></li>
+        <li><a href="#ticket" @click="showMenu = !showMenu">{{ $t("Tickets") }}</a></li>
       </ul>
-      <a href="javascript:" class="close-menu">x</a>
+      <a href="javascript:" class="close-menu" @click="showMenu = !showMenu"
+        >x</a
+      >
     </div>
 
+    <a href="javascript:" class="menu-toggle" @click="showMenu = !showMenu">
+      <img src="assets/img/open-menu.svg" alt="open mobile menu" />
+    </a>
+
     <div class="mobile-nav">
-      <a href="javascript:" class="menu-toggle">
+      <a href="javascript:" class="menu-toggle" @click="showMenu = !showMenu">
         <img src="/assets/img/open-menu.svg" alt="open mobile menu" />
       </a>
       <div class="language-wrapper">
@@ -51,7 +47,7 @@
       <div class="header-absolute">
         <div class="container">
           <header>
-            <a href="#" class="logo">
+            <a href="javascript:" class="logo">
               <img src="/assets/img/gophercon.png" alt="logo" />
             </a>
             <ul class="menu">
@@ -73,7 +69,11 @@
                 </ul>
               </li>
               <li>
-                <a href="javascript:" class="button menu-toggle">
+                <a
+                  href="javascript:"
+                  class="button menu-toggle"
+                  @click="showMenu = !showMenu"
+                >
                   <img
                     src="/assets/img/open-menu-white.svg"
                     alt="open mobile menu"
@@ -464,6 +464,7 @@ export default {
   data() {
     return {
       live: false,
+      showMenu: false,
       showLanguages: false,
       days: [],
       speakers: [],

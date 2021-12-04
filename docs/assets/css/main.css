@@ -94,7 +94,7 @@ header .menu li a.button {
 }
 
 .language-wrapper a.language-button:hover {
-  background: rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .language-picker {
@@ -208,7 +208,7 @@ header .menu img {
   animation: blink 1s infinite;
 }
 
-@keyframes blink{
+@keyframes blink {
   0% {
     background: #f00;
   }
@@ -220,7 +220,7 @@ header .menu img {
   }
 }
 
-@-webkit-keyframes blink{
+@-webkit-keyframes blink {
   0% {
     background: #f00;
     color: #fff;
@@ -406,13 +406,13 @@ header .menu img {
   height: 18px;
 }
 
-.speakers .profile img{
+.speakers .profile img {
   border-radius: 100%;
   width: 180px;
   height: 180px;
 }
 
-.speakers .profile .position{
+.speakers .profile .position {
   font-size: 14px;
 }
 
@@ -768,7 +768,7 @@ header .menu img {
   position: relative;
 }
 
-.sponsor-list{
+.sponsor-list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -785,13 +785,13 @@ header .menu img {
   margin: 0 5px;
 }
 
-.sponsors .sponsor a{
+.sponsors .sponsor a {
   margin: 0;
   padding: 0;
   width: auto;
 }
 
-.sponsors .sponsor img{
+.sponsors .sponsor img {
   height: auto;
   max-height: 80px;
   max-width: 250px;
@@ -915,10 +915,6 @@ footer .logo img {
   display: none;
 }
 
-.mobile-menu {
-  display: none;
-}
-
 .menu-toggle {
   display: none;
 }
@@ -936,6 +932,7 @@ footer .logo img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  display: flex;
 }
 
 .mobile-menu .menu {
@@ -968,7 +965,7 @@ footer .logo img {
 
 .mobile-nav {
   display: flex;
-  align-items: 'center';
+  align-items: "center";
 }
 
 @media (max-width: 767.98px) {
@@ -1275,7 +1272,7 @@ footer .logo img {
     color: #000;
     text-shadow: none;
     font-weight: 900;
-    text-shadow: 1px 1px #FFF;
+    text-shadow: 1px 1px #fff;
   }
 
   .announcement-aboslute p {
@@ -1286,7 +1283,7 @@ footer .logo img {
     color: #000;
     text-shadow: none;
     font-weight: 900;
-    text-shadow: 1px 1px #FFF;
+    text-shadow: 1px 1px #fff;
   }
 
   .about h1 {
@@ -1299,12 +1296,11 @@ footer .logo img {
     font-weight: 600;
   }
 
-  .custom-card{
+  .custom-card {
     width: 100%;
   }
 
-
-  .sponsor-list{
+  .sponsor-list {
     display: block;
   }
 
@@ -1312,5 +1308,4 @@ footer .logo img {
     padding: 0 15px;
     margin-bottom: 15px;
   }
-
 }

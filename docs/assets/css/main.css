@@ -11,6 +11,7 @@ img {
 
 .slider {
   position: relative;
+  min-height: 400px;
 }
 
 .slider .sliderbg {
@@ -240,7 +241,6 @@ header .menu img {
   font-weight: 500;
   border-radius: 50px;
   border: 1px solid;
-  background-color: transparent;
   padding: 8px 37px;
   border-color: #262626;
   color: #fff;
@@ -252,7 +252,7 @@ header .menu img {
   background: #262626;
   transition: 0.5s ease-in-out;
   display: inline-block;
-  margin: 0 5px 0 5px;
+  margin: 5px;
 }
 
 .announcement-aboslute .btn-custom:hover {
@@ -1252,18 +1252,15 @@ footer .logo img {
     font-weight: 600;
     border-radius: 50px;
     border: 1px solid;
-    background-color: transparent;
     padding: 8px 20px;
-    border-color: #00aeef;
     color: #fff;
     text-shadow: none;
     transition: all 0.3s ease-in-out;
     font-family: "Open Sans", sans-serif;
     text-transform: uppercase;
-    background: #00aeef;
     transition: 0.5s ease-in-out;
     display: inline-block;
-    margin: 0 5px;
+    margin: 5px;
   }
 
   .announcement-aboslute h1 {

@@ -2,11 +2,29 @@
   <div id="app">
     <div class="mobile-menu" v-show="showMenu">
       <ul class="menu">
-        <li><a href="#about" @click="showMenu = !showMenu">{{ $t("About") }}</a></li>
-        <li><a href="#speakers" @click="showMenu = !showMenu">{{ $t("Speakers") }}</a></li>
-        <li><a href="#schedule" @click="showMenu = !showMenu">{{ $t("Schedule") }}</a></li>
-        <li><a href="#sponsors" @click="showMenu = !showMenu">{{ $t("Sponsors") }}</a></li>
-        <li><a href="#ticket" @click="showMenu = !showMenu">{{ $t("Tickets") }}</a></li>
+        <li>
+          <a href="#about" @click="showMenu = !showMenu">{{ $t("About") }}</a>
+        </li>
+        <li>
+          <a href="#speakers" @click="showMenu = !showMenu">{{
+            $t("Speakers")
+          }}</a>
+        </li>
+        <li>
+          <a href="#schedule" @click="showMenu = !showMenu">{{
+            $t("Schedule")
+          }}</a>
+        </li>
+        <li>
+          <a href="#sponsors" @click="showMenu = !showMenu">{{
+            $t("Sponsors")
+          }}</a>
+        </li>
+        <li>
+          <a href="#ticket" @click="showMenu = !showMenu">{{
+            $t("Tickets")
+          }}</a>
+        </li>
       </ul>
       <a href="javascript:" class="close-menu" @click="showMenu = !showMenu"
         >x</a
@@ -94,29 +112,33 @@
         </div>
         <h1>{{ $t("header_title") }}</h1>
         <p>{{ $t("header_slogan") }}</p>
-        <div class="buttons">
+        <div class="buttons row">
           <br />
           <br />
-          <a
-            class="btn btn-custom"
-            target="_blank"
-            href="https://www.youtube.com/watch?v=Mx-Vu0dK49k"
-            ><img
-              src="/assets/img/youtube.png"
-              style="width: 40px; margin-right: 10px"
-            />
-            {{ $t("_turkish_track") }}</a
-          >
-          <a
-            class="btn btn-custom"
-            target="_blank"
-            href="https://www.youtube.com/watch?v=dEJ-bsNFKSI"
-            ><img
-              src="/assets/img/youtube.png"
-              style="width: 40px; margin-right: 10px"
-            />
-            {{ $t("_english_track") }}</a
-          >
+          <div class="col-12 col-md-6">
+            <a
+              class="btn btn-custom"
+              target="_blank"
+              href="https://www.youtube.com/watch?v=Mx-Vu0dK49k"
+              ><img
+                src="/assets/img/youtube.png"
+                style="width: 40px; margin-right: 10px"
+              />
+              {{ $t("_turkish_track") }}</a
+            >
+          </div>
+          <div class="col-12 col-md-6">
+            <a
+              class="btn btn-custom"
+              target="_blank"
+              href="https://www.youtube.com/watch?v=dEJ-bsNFKSI"
+              ><img
+                src="/assets/img/youtube.png"
+                style="width: 40px; margin-right: 10px"
+              />
+              {{ $t("_english_track") }}</a
+            >
+          </div>
         </div>
       </div>
     </section>

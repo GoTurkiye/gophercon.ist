@@ -7,10 +7,12 @@ import VueMeta from 'vue-meta'
 import en from './languages/en.json'
 import tr from './languages/tr.json'
 import 'sweetalert2/dist/sweetalert2.min.css'
+import axios from 'axios'
 
 Vue.use(VueI18n)
 Vue.use(VueSweetalert2)
 Vue.config.productionTip = false
+Vue.prototype.$axios = axios
 
 const languages = {
   en: en,

@@ -220,6 +220,21 @@ header .menu img {
   }
 }
 
+@-webkit-keyframes blink{
+  0% {
+    background: #f00;
+    color: #fff;
+  }
+  50% {
+    background: #fff;
+    color: #f00;
+  }
+  100% {
+    background: #f00;
+    color: #fff;
+  }
+}
+
 .announcement-aboslute .btn-custom {
   font-size: 17px;
   font-weight: 500;

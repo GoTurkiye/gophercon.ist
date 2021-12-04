@@ -30,9 +30,9 @@ const i18n = new VueI18n({
 Vue.use(VueRouter)
 
 const routes = [
-  {name: 'en', path: '/en', component: App},
-  {name: 'tr', path: '/tr', component: App},
-  {name: '404', path: '*', redirect: {name: 'en'}},
+  //{name: 'en', path: '/en', component: App},
+  //{name: 'tr', path: '/tr', component: App},
+  //{name: '404', path: '*', redirect: {name: 'en'}},
 ]
 
 const router = new VueRouter({

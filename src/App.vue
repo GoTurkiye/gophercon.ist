@@ -35,10 +35,10 @@
         </a>
         <ul class="language-picker" v-show="showLanguages">
           <li v-if="this.$i18n.locale != 'tr'">
-            <a href="/tr" class="language-button">TR</a>
+            <a href="?language=tr" class="language-button">TR</a>
           </li>
           <li v-if="this.$i18n.locale != 'en'">
-            <a href="/en" class="language-button">EN</a>
+            <a href="?language=en" class="language-button">EN</a>
           </li>
         </ul>
       </div>
@@ -65,10 +65,10 @@
                 </a>
                 <ul class="language-picker" v-show="showLanguages">
                   <li v-if="this.$i18n.locale != 'tr'">
-                    <a href="/tr" class="button language-button">TR</a>
+                    <a href="?language=tr" class="button language-button">TR</a>
                   </li>
                   <li v-if="this.$i18n.locale != 'en'">
-                    <a href="/en" class="button language-button">EN</a>
+                    <a href="?language=en" class="button language-button">EN</a>
                   </li>
                 </ul>
               </li>
@@ -518,7 +518,12 @@ export default {
     //
     // this.$i18n.locale = lang
 
-    let lang = this.$route.name;
+    var lang = this.$route.query.language;
+
+    if (lang === "" || lang == null) {
+      lang = "en";
+    }
+
     this.$i18n.locale = lang;
 
     this.getData();

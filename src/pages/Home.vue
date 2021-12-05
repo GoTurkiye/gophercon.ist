@@ -343,7 +343,7 @@ export default {
   },
   data() {
     return {
-      live: true,
+      live: false,
       days: [],
       speakers: [],
       sessions: [],

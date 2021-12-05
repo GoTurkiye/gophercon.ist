@@ -3,7 +3,7 @@
     <div class="mobile-menu" v-show="showMenu">
       <ul class="menu">
         <li v-show="sponsor">
-          <a href="/" @click="showMenu = !showMenu"> {{ $t("home") }}</a>
+          <router-link to="/" @click="showMenu = !showMenu"> {{ $t("home") }}</router-link>
         </li>
         <li>
           <a href="#about" @click="showMenu = !showMenu"> {{ $t("About") }}</a>

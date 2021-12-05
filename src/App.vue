@@ -29,9 +29,7 @@
           }}</a>
         </li>
         <li v-show="sponsor">
-          <a href="#ticket" @click="showMenu = !showMenu">{{
-            $t("jobs")
-          }}</a>
+          <a href="#ticket" @click="showMenu = !showMenu">{{ $t("jobs") }}</a>
         </li>
         <li>
           <a
@@ -101,6 +99,13 @@ export default {
     };
   },
   mounted() {
+    if (window.location.search.startsWith("?%2Fsponsor%2F")) {
+      var decoded = decodeURIComponent(
+        window.location.search.replaceAll("?", "")
+      );
+      this.$router.push(decoded);
+    }
+
     this.sponsor = this.$route.params.name.length > 0;
   },
   methods: {

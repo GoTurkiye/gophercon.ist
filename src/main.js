@@ -33,7 +33,9 @@ Vue.use(VueRouter)
 
 const routes = [
   {name: 'home', path: '/', component: Home},
+  {name: 'home', path: '/gophercon.ist', component: Home},
   {name: 'sponsor', path: '/sponsor/:name', component: Sponsor},
+  {name: 'sponsor', path: '/gophercon.ist/sponsor/:name', component: Sponsor},
   {name: '404', path: '*', redirect: {name: 'home'}},
 ]
 

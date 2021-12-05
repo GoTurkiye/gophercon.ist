@@ -57,5 +57,9 @@
   "show_more": "Show More",
   "main": "MAIN SPONSOR",
   "platinum": "PLATINUM SPONSOR",
-  "live":"Live"
+  "live":"Live",
+  "home":"HOME",
+  "stand":"Virtual Stand",
+  "apply":"APPLY",
+  "jobs":"Jobs"
 }

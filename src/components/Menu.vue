@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div class="header-absolute">
     <div class="mobile-menu" v-show="showMenu">
       <ul class="menu">
         <li v-show="sponsor">
@@ -63,10 +63,6 @@
       >
     </div>
 
-    <a href="javascript:" class="menu-toggle" @click="showMenu = !showMenu">
-      <img src="/assets/img/open-menu.svg" alt="open mobile menu" />
-    </a>
-
     <div class="mobile-nav">
       <div class="language-wrapper">
         <a
@@ -86,13 +82,50 @@
         </ul>
       </div>
     </div>
-    <router-view></router-view>
+    <div class="container">
+      <header>
+        <a href="javascript:" class="logo">
+          <img src="/assets/img/gophercon.png" alt="logo" />
+        </a>
+        <ul class="menu">
+          <li class="language-wrapper">
+            <a
+              href="javascript:"
+              class="button language-button"
+              @click="showLanguages = !showLanguages"
+            >
+              {{ this.$i18n.locale }}
+            </a>
+            <ul class="language-picker" v-show="showLanguages">
+              <li v-if="this.$i18n.locale != 'tr'">
+                <a href="#" @click="lang('tr')" class="language-button">TR</a>
+              </li>
+              <li v-if="this.$i18n.locale != 'en'">
+                <a href="#" @click="lang('en')" class="language-button">EN</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a
+              href="javascript:"
+              class="button menu-toggle"
+              @click="showMenu = !showMenu"
+            >
+              <img
+                src="/assets/img/open-menu-white.svg"
+                alt="open mobile menu"
+              />
+            </a>
+          </li>
+        </ul>
+      </header>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "App",
+  name: "Menu",
   data() {
     return {
       showMenu: false,

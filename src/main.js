@@ -1,5 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
+import Home from './pages/Home.vue'
+import Sponsor from './pages/Sponsor.vue'
 import VueI18n from 'vue-i18n'
 import VueRouter from 'vue-router'
 import VueSweetalert2 from 'vue-sweetalert2'
@@ -30,9 +32,9 @@ const i18n = new VueI18n({
 Vue.use(VueRouter)
 
 const routes = [
-  //{name: 'en', path: '/en', component: App},
-  //{name: 'tr', path: '/tr', component: App},
-  //{name: '404', path: '*', redirect: {name: 'en'}},
+  {name: 'home', path: '/', component: Home},
+  {name: 'sponsor', path: '/sponsor/:name', component: Sponsor},
+  {name: '404', path: '*', redirect: {name: 'home'}},
 ]
 
 const router = new VueRouter({

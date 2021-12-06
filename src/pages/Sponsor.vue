@@ -11,6 +11,7 @@
             <img :src="company.logo" :alt="company.title" class="gopher" />
           </a>
 
+          <div v-html="$t(company.about)"></div>
           <ul class="social">
             <li>
               <a target="_blank" :href="company.twitter">
@@ -23,7 +24,6 @@
               </a>
             </li>
           </ul>
-          <div v-html="$t(company.about)"></div>
           <div class="buttons" style="padding-top: 30px; padding-bottom: 30px">
             <a class="btn btn-custom" target="_blank" :href="company.discord"
               ><img
@@ -32,6 +32,44 @@
               />
               {{ $t("stand") }}</a
             >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="ticket" id="ticket" v-show="company.jobs.length > 0">
+      <img
+        src="/assets/img/gopher-07.png"
+        alt="gopher"
+        class="gopher hide-mobile"
+      />
+      <h2 class="title">{{ $t("jobs") }}</h2>
+      <div class="container">
+        <div class="tables">
+          <div class="table mt-4" v-for="job in company.jobs" v-bind:key="job">
+            <img
+              src="/assets/img/gopher-03.png"
+              alt="gopher"
+              class="gopher-free"
+            />
+            <div class="name">{{ job.title }}</div>
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <img :src="job.img" width="100%" />
+              </div>
+              <div class="col-12 col-md-6">
+                <p v-html="job.desc"></p>
+                <br />
+                <ul>
+                  <li v-for="item in job.items" v-bind:key="item">
+                    {{ item }}
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <a :href="job.url" class="buy buy-red" target="_blank">{{
+              $t("apply")
+            }}</a>
           </div>
         </div>
       </div>
@@ -173,44 +211,6 @@
         </div>
       </div>
     </section>
-    <section class="ticket" id="ticket" v-show="company.jobs.length > 0">
-      <img
-        src="/assets/img/gopher-07.png"
-        alt="gopher"
-        class="gopher hide-mobile"
-      />
-      <h2 class="title">{{ $t("jobs") }}</h2>
-      <div class="container">
-        <div class="tables">
-          <div class="table mt-4" v-for="job in company.jobs" v-bind:key="job">
-            <img
-              src="/assets/img/gopher-03.png"
-              alt="gopher"
-              class="gopher-free"
-            />
-            <div class="name">{{ job.title }}</div>
-            <div class="row">
-              <div class="col-12 col-md-6">
-                <img :src="job.img" width="100%" />
-              </div>
-              <div class="col-12 col-md-6">
-                <p v-html="job.desc"></p>
-                <br />
-                <ul>
-                  <li v-for="item in job.items" v-bind:key="item">
-                    {{ item }}
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <a :href="job.url" class="buy buy-red" target="_blank">{{
-              $t("apply")
-            }}</a>
-          </div>
-        </div>
-      </div>
-    </section>
     <Footer></Footer>
   </div>
 </template>
@@ -312,7 +312,7 @@ export default {
           youtube: "https://www.youtube.com/channel/UCUBiayLMggBAsiYvGLzQJ5w",
           discord: "https://discord.gg/RsJRKHNew5",
           about:
-            "If you are a big fan of Tech, curious about scaling services to millions, have interest in Software Development Methodologies, love playing with Big Data and enjoy being a Polyglot, come join us! Food and beverages are also included.",
+            "Our purpose is to create the greatest positive impact in our country and ecosystem by enabling commerce, empowered by technology!<br><br>We are a Tech company - Technology is the driver, e-commerce is the outcome. We were established in 2010 to provide a seamless e-commerce experience to our customers and SMEs. In ten years, we became the largest e-commerce company in Turkey, as well as one of the leading global platforms. Trendyol is the 1st Turkish company to achieve the decacorn status and the most valuable private internet company in the EMEA region.<br><br>We will continue to grow with Trendyol Tech; one of the leading R&D centers, our last-mile delivery solution (Trendyol Express), instant grocery and food delivery through its own courier network (Trendyol Go), digital wallet, consumer-to-consumer channel (Dolap) and many other services. We are scaling fast and profitably, expanding into international markets.<br><br>Our culture is at the core of everything we do. Focused on results, keeping our customers first, we always work for better and always test, iterate and improve. We learn from our mistakes, direct and open feedback is at the core of our culture. If you want to learn, grow and deliver; are result-oriented, love teamwork, appreciate open communication, learning and iteration, and make decisions with data, Come, join our tribe!<br><br>Technology Department is one of the most important teams at Trendyol which is future-oriented, fast-growing and technology enthusiast company. Software Development Team builds scalable, high performing platforms for our customer satisfaction by using up-to-date and efficient technologies. In the end, we are all working towards the same goal: to create an excellent experience for our customers at Trendyol.",
           jobs: [
             {
               title: "Golang Developer",

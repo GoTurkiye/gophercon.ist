@@ -381,12 +381,12 @@ export default {
           link: "/sponsor/bestcloudforme",
           logo: "/assets/img/sponsors/bestcloudforme.png",
         },
-        /*{
+        {
           type: "platinum",
           name: "Modanisa",
           link: "/sponsor/modanisa",
-          logo: "/assets/img/sponsors/bestcloudforme.png",
-        },*/
+          logo: "/assets/img/sponsors/modanisa.png",
+        },
       ],
     };
   },

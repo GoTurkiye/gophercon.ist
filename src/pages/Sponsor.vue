@@ -341,6 +341,20 @@ export default {
             "Advance your cloud, DevOps, SysOps and continuous delivery capabilities for increased automation and efficiency.",
           jobs: [],
         },
+        modanisa: {
+          name: "Modanisa",
+          title: "Modanisa",
+          type: "platinum",
+          logo: "/assets/img/sponsors/modanisa.png",
+          url: "https://modanisa.com/",
+          linkedin: "https://www.linkedin.com/company/modanisa/",
+          twitter: "https://twitter.com/modanisa",
+          youtube: "https://www.youtube.com/channel/UCuEGkLQk-sUGE_CO78bB1Ig",
+          discord: "https://discord.gg/tHZxfquYdq",
+          about:
+            "Founded in 2011, Modanisa enables modest women to look good and feel self-confident in today’s world. Our mission is to build a global ecosystem that combines fashion and technology to serve the life style needs of modest women. Born in Istanbul, we now have customers in 130+ countries. We offer contents in seven languages: Turkish, Arabic, English, French, German, Bahasa Indonesia and Malay. We sell over 500 brands and 70 thousand products, shipping thousands of packages a day to five continents. We bring fashion and technology together with iconic brand and smart operations to create great value for our customers. We invest in each and every customer’s experience. We strongly believe in putting people first – our customer, our team, our partner. We bring accessibility to latest fashion, embrace differences and honor diversity. We build mutual trust with our stakeholders and we are a brand good on our word.",
+          jobs: [],
+        },
       },
       company: {},
     };

@@ -377,15 +377,15 @@ export default {
       platinumponsors: [
         {
           type: "platinum",
-          name: "Bestcloudforme",
-          link: "/sponsor/bestcloudforme",
-          logo: "/assets/img/sponsors/bestcloudforme.png",
-        },
-        {
-          type: "platinum",
           name: "Modanisa",
           link: "/sponsor/modanisa",
           logo: "/assets/img/sponsors/modanisa.png",
+        },
+        {
+          type: "platinum",
+          name: "Bestcloudforme",
+          link: "/sponsor/bestcloudforme",
+          logo: "/assets/img/sponsors/bestcloudforme.png",
         },
       ],
     };

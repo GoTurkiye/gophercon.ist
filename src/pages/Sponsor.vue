@@ -11,7 +11,7 @@
             <img :src="company.logo" :alt="company.title" class="gopher" />
           </a>
 
-          <div v-html="$t(company.about)"></div>
+          <div v-html="company.about[$i18n.locale]"></div>
           <ul class="social">
             <li>
               <a target="_blank" :href="company.twitter">
@@ -152,7 +152,7 @@
               </div>
             </div>
             <div class="line-center">
-              <div class="turkish-tracks">
+              <div class="turkish-tracks" style="min-widtg:50%">
                 <div
                   v-for="track in turkishTracks"
                   v-bind:key="track"
@@ -173,7 +173,7 @@
                   </div>
                 </div>
               </div>
-              <div class="english-tracks">
+              <div class="english-tracks" style="min-widtg:50%">
                 <div
                   v-for="track in englishTracks"
                   v-bind:key="track"
@@ -311,8 +311,10 @@ export default {
           twitter: "https://twitter.com/trendyoltech",
           youtube: "https://www.youtube.com/channel/UCUBiayLMggBAsiYvGLzQJ5w",
           discord: "https://discord.gg/RsJRKHNew5",
-          about:
-            "Our purpose is to create the greatest positive impact in our country and ecosystem by enabling commerce, empowered by technology!<br><br>We are a Tech company - Technology is the driver, e-commerce is the outcome. We were established in 2010 to provide a seamless e-commerce experience to our customers and SMEs. In ten years, we became the largest e-commerce company in Turkey, as well as one of the leading global platforms. Trendyol is the 1st Turkish company to achieve the decacorn status and the most valuable private internet company in the EMEA region.<br><br>We will continue to grow with Trendyol Tech; one of the leading R&D centers, our last-mile delivery solution (Trendyol Express), instant grocery and food delivery through its own courier network (Trendyol Go), digital wallet, consumer-to-consumer channel (Dolap) and many other services. We are scaling fast and profitably, expanding into international markets.<br><br>Our culture is at the core of everything we do. Focused on results, keeping our customers first, we always work for better and always test, iterate and improve. We learn from our mistakes, direct and open feedback is at the core of our culture. If you want to learn, grow and deliver; are result-oriented, love teamwork, appreciate open communication, learning and iteration, and make decisions with data, Come, join our tribe!",
+          about: {
+            en: "Our purpose is to create the greatest positive impact in our country and ecosystem by enabling commerce, empowered by technology!<br><br>We are a Tech company - Technology is the driver, e-commerce is the outcome. We were established in 2010 to provide a seamless e-commerce experience to our customers and SMEs. In ten years, we became the largest e-commerce company in Turkey, as well as one of the leading global platforms. Trendyol is the 1st Turkish company to achieve the decacorn status and the most valuable private internet company in the EMEA region.<br><br>We will continue to grow with Trendyol Tech; one of the leading R&D centers, our last-mile delivery solution (Trendyol Express), instant grocery and food delivery through its own courier network (Trendyol Go), digital wallet, consumer-to-consumer channel (Dolap) and many other services. We are scaling fast and profitably, expanding into international markets.<br><br>Our culture is at the core of everything we do. Focused on results, keeping our customers first, we always work for better and always test, iterate and improve. We learn from our mistakes, direct and open feedback is at the core of our culture. If you want to learn, grow and deliver; are result-oriented, love teamwork, appreciate open communication, learning and iteration, and make decisions with data, Come, join our tribe!",
+            tr: "Our purpose is to create the greatest positive impact in our country and ecosystem by enabling commerce, empowered by technology!<br><br>We are a Tech company - Technology is the driver, e-commerce is the outcome. We were established in 2010 to provide a seamless e-commerce experience to our customers and SMEs. In ten years, we became the largest e-commerce company in Turkey, as well as one of the leading global platforms. Trendyol is the 1st Turkish company to achieve the decacorn status and the most valuable private internet company in the EMEA region.<br><br>We will continue to grow with Trendyol Tech; one of the leading R&D centers, our last-mile delivery solution (Trendyol Express), instant grocery and food delivery through its own courier network (Trendyol Go), digital wallet, consumer-to-consumer channel (Dolap) and many other services. We are scaling fast and profitably, expanding into international markets.<br><br>Our culture is at the core of everything we do. Focused on results, keeping our customers first, we always work for better and always test, iterate and improve. We learn from our mistakes, direct and open feedback is at the core of our culture. If you want to learn, grow and deliver; are result-oriented, love teamwork, appreciate open communication, learning and iteration, and make decisions with data, Come, join our tribe!",
+          },
           jobs: [
             {
               title: "Golang Developer",
@@ -337,8 +339,10 @@ export default {
           twitter: "https://twitter.com/bestcloudforme",
           youtube: "https://www.youtube.com/channel/UCC5QWJKPzzLFuggLqWAjhiw",
           discord: "https://discord.gg/cRCqytR2e4",
-          about:
-            "Advance your cloud, DevOps, SysOps and continuous delivery capabilities for increased automation and efficiency.",
+          about: {
+            en: "Advance your cloud, DevOps, SysOps and continuous delivery capabilities for increased automation and efficiency.",
+            tr: "Advance your cloud, DevOps, SysOps and continuous delivery capabilities for increased automation and efficiency.",
+          },
           jobs: [],
         },
         modanisa: {
@@ -351,8 +355,10 @@ export default {
           twitter: "https://twitter.com/modanisa",
           youtube: "https://www.youtube.com/channel/UCuEGkLQk-sUGE_CO78bB1Ig",
           discord: "https://discord.gg/tHZxfquYdq",
-          about:
-            "Founded in 2011, Modanisa enables modest women to look good and feel self-confident in today’s world. Our mission is to build a global ecosystem that combines fashion and technology to serve the life style needs of modest women. Born in Istanbul, we now have customers in 130+ countries. We offer contents in seven languages: Turkish, Arabic, English, French, German, Bahasa Indonesia and Malay. We sell over 500 brands and 70 thousand products, shipping thousands of packages a day to five continents. We bring fashion and technology together with iconic brand and smart operations to create great value for our customers. We invest in each and every customer’s experience. We strongly believe in putting people first – our customer, our team, our partner. We bring accessibility to latest fashion, embrace differences and honor diversity. We build mutual trust with our stakeholders and we are a brand good on our word.",
+          about: {
+            en: "Modanisa.com launched on Mother’s Day, 2011. We were the first Turkish fashion platform to deliver online clothes shopping to our target audience in such variety. Born in Istanbul, we now have customers in 140 countries. We offer contents in 6 languages: Turkish, Arabic, English, French, German and Bahasa. We speak our customers’ language, we recognize their needs, and we know their preferences. Each month, we reach 30 million visitors from all over the world via our app and desktop platforms. We sell over 1000 brands and 100 thousand products, shipping thousands of packages a day to five continents. We employ confident and youthful staff from different nationalities and cultures whose average age is 28. As Turkey’s first international online shopping site platform and e-export champion, we are proud to introduce small producers and designers to the world. We may be growing fast, but we still adhere to our start-up ethos.",
+            tr: 'Modanisa.com, 2011 yılının Anneler Günü’nde açılışını yaptı. Doğum yerimiz İstanbul ve 140 ülkeden müşterilerimiz var. Yayınlarımızı Türkçe, Arapça, İngilizce, Fransızca, Almanca ve Bahasa olmak üzere 6 dilde gerçekleştiriyoruz. Dünyanın 5 kıtasına her gün binlerce kargo gönderiyoruz. Her ay dünyanın dört bir yanından "muhafazakar" giyim tarzını benimsemiş 30 milyon ziyaretçiye app, mobil ve desktop platformlarından ulaşıyoruz. Onların dilini konuşuyor, ihtiyaçlarını tanıyor, tercihlerini biliyoruz. Şimdilik satışını yaptığımız marka sayısı 1000, ürün çeşitliliğimiz 100 bin. Farklı milliyet ve kültürlerden, yaş ortalaması 28 olan genç ve atak bir insan kaynağımız var.Bugün, ülkemizin ilk uluslararası online alışveriş sitesi ve e-ihracat şampiyonu olarak, Türkiye\'nin hazır giyimdeki gücünü dünyayla buluşturmanın gururunu yaşıyoruz. Müşterilerimizin sevgisi, güveni ve yakın ilgisiyle büyümeye devam ediyoruz; büyürken de start up ruhumuzu koruyoruz.',
+          },
           jobs: [],
         },
       },

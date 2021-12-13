@@ -122,7 +122,7 @@
                       style="max-width: 100px; max-height: 25px"
                     />
                   </p>
-                  <p v-if="track.speaker.company_name == 'Bestcloudforme'">
+                  <p v-if="track.speaker.company_name == 'Bestcloudfor.me'">
                     Sponsor:
                     <img
                       src="/assets/img/sponsors/bestcloudforme.png"
@@ -164,7 +164,7 @@
                       style="max-width: 100px; max-height: 25px"
                     />
                   </p>
-                  <p v-if="track.speaker.company_name == 'Bestcloudforme'">
+                  <p v-if="track.speaker.company_name == 'Bestcloudfor.me'">
                     Sponsor:
                     <img
                       src="/assets/img/sponsors/bestcloudforme.png"
@@ -383,7 +383,7 @@ export default {
         },
         {
           type: "platinum",
-          name: "Bestcloudforme",
+          name: "Bestcloudfor.me",
           link: "/sponsor/bestcloudforme",
           logo: "/assets/img/sponsors/bestcloudforme.png",
         },

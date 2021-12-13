@@ -57,9 +57,13 @@
   "show_more": "Show More",
   "main": "MAIN SPONSOR",
   "platinum": "PLATINUM SPONSOR",
-  "live":"Live",
+  "live":"LIVE",
   "home":"HOME",
   "stand":"Virtual Stand",
   "apply":"APPLY",
-  "jobs":"Jobs"
+  "jobs":"Jobs",
+  "workshops":"WORKSHOPS",
+  "workshop":"Workshop",
+  "presentation_start":"18 December",
+  "workshop_start":"19 December"
 }

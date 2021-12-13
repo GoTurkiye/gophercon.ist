@@ -18,6 +18,11 @@
             $t("Schedule")
           }}</a>
         </li>
+        <li>
+          <a href="#workshop" @click="showMenu = !showMenu">{{
+            $t("workshop")
+          }}</a>
+        </li>
         <li v-show="!sponsor">
           <a href="#sponsors" @click="showMenu = !showMenu">{{
             $t("Sponsors")

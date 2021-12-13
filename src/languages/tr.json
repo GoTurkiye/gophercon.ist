@@ -57,9 +57,13 @@
  "show_more": "Devamını Göster",
  "main": "ANA SPONSOR",
  "platinum": "PLATINUM SPONSOR",
- "live":"Canlı",
+ "live":"CANLI",
  "home":"ANA SAYFA",
  "stand":"Sanal Stand",
  "apply":"BAŞVUR",
- "jobs":"İş İlanları"
+ "jobs":"İş İlanları",
+ "workshops":"ATÖLYELER",
+ "workshop":"Atölye",
+ "presentation_start":"18 Aralık",
+ "workshop_start":"19 Aralık"
 }

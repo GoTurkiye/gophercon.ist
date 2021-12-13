@@ -211,6 +211,92 @@
         </div>
       </div>
     </section>
+        <section class="schedule" id="workshop">
+      <h2 class="title">{{ $t("workshops") }}</h2>
+
+      <div class="container">
+        <div class="feed-out">
+          <div class="feed">
+            <div class="line-center">
+              <div class="flex1 flex-center">
+                <div class="timer">
+                  {{ $t("workshop_start") }} 11:00 - {{ $t("Start") }}
+                </div>
+              </div>
+            </div>
+            <div
+              class="line-center"
+              v-for="track in workshops"
+              v-bind:key="track"
+            >
+              <div class="custom-card line-center flex1 mt-5">
+                <div class="timer timer-absolute">
+                  {{ track.start }} - {{ track.end }}
+                </div>
+                <pre>{{ $t("workshop") }}</pre>
+                <p v-if="track.sponsor == 'Trendyol'">
+                  Sponsor:
+                  <img
+                    src="/assets/img/sponsors/trendyoltech.png"
+                    style="max-width: 100px; max-height: 25px"
+                  />
+                </p>
+                <p v-if="track.sponsor == 'Bestcloudfor.me'">
+                  Sponsor:
+                  <img
+                    src="/assets/img/sponsors/bestcloudforme.png"
+                    style="max-width: 100px; max-height: 25px"
+                  />
+                </p>
+                <p v-if="track.sponsor == 'Modanisa'">
+                  Sponsor:
+                  <img
+                    src="/assets/img/sponsors/modanisa.png"
+                    style="max-width: 100px; max-height: 25px"
+                  />
+                </p>
+                <p class="title">{{ track.title }}</p>
+                <div class="author">
+                  <img :src="track.avatar" alt="avatar" class="avatar" />
+                  {{ track.speakerName }}
+                </div>
+                <a
+                  class="btn btn-custom"
+                  target="_blank"
+                  v-show="track.public"
+                  :href="track.url"
+                  ><img
+                    src="/assets/img/youtube.png"
+                    style="width: 30px; margin-right: 10px"
+                  />
+                  {{ $t("live") }}</a
+                >
+                <a
+                  class="btn btn-custom"
+                  target="_blank"
+                  v-show="!track.public"
+                  :href="track.url"
+                >
+                  {{ $t("apply") }}</a
+                >
+              </div>
+            </div>
+            <!-- <div class="line-center">
+              <div class="flex1 flex-center">
+                <div class="timer timer-gray mt-5">
+                  Coffee Break 10:10 - 10:40
+                </div>
+              </div>
+            </div> -->
+            <div class="line-center">
+              <div class="flex1 flex-center">
+                <div class="timer mt-5">19:30 - {{ $t("finish") }}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <Footer></Footer>
   </div>
 </template>
@@ -298,6 +384,64 @@ export default {
           title: "",
           speakerName: "",
           avatar: "",
+        },
+      ],
+
+      workshops: [
+        {
+          start: "11:00",
+          end: "12:30",
+          title: "Go ile Ölçeklenebilir Web Uygulamaları",
+          speakerName: "Hüseyin Aküzüm",
+          avatar:
+            "https://media.kommunity.com/live/goturkiye/events/gophercon-turkey-1c8eab1d/speakers/huseyin-akuzum_live_61a5e29b0344b.jpeg",
+          sponsor: "Trendyol",
+          public: false,
+          url: "https://forms.gle/1JpvHyAGf3B3WgGG7",
+        },
+        {
+          start: "12:45",
+          end: "14:15",
+          title: "Consumer Driven Contract  Using Pact in Go",
+          speakerName: "Abdulsamet İleri",
+          avatar:
+            "https://media.kommunity.com/live/goturkiye/events/gophercon-turkey-1c8eab1d/speakers/abdulsamet-ileri_live_61b2f37e78623.jpeg",
+          sponsor: "Modanisa",
+          public: false,
+          url: "http://bit.ly/gctr_atm",
+        },
+        {
+          start: "14:30",
+          end: "16:00",
+          title: "Csv bir dosyayı MongoDB Kaydetme",
+          speakerName: "Bora Kaşmer",
+          avatar:
+            "https://media.kommunity.com/live/goturkiye/events/gophercon-turkey-1c8eab1d/speakers/bora-kasmer_live_619b633797c33.png",
+          sponsor: "",
+          public: true,
+          url: "https://www.youtube.com/watch?v=sg1rWz6v-kE",
+        },
+        {
+          start: "16:15",
+          end: "17:45",
+          title: "How to Cache With Sidecar Pattern",
+          speakerName: "Ahmet Avcı & Kenan Faruk Çakır",
+          avatar:
+            "https://media.kommunity.com/live/goturkiye/events/gophercon-turkey-1c8eab1d/speakers/kenan-faruk-cakir_live_61a5e2f59346f.jpg",
+          sponsor: "Trendyol",
+          public: false,
+          url: "https://forms.gle/3vv8r2rccyBKduqx9",
+        },
+        {
+          start: "18:00",
+          end: "19:30",
+          title: "Run your Go App on AWS Lambda",
+          speakerName: "Harun Demirci & Engincan Höke & Gökhan Nihal",
+          avatar:
+            "https://media.kommunity.com/live/goturkiye/events/gophercon-turkey-1c8eab1d/speakers/harun-demirci_live_61b76b83121de.jpeg",
+          sponsor: "Bestcloudfor.me",
+          public: false,
+          url: "https://forms.gle/kNUjJ5FBrcNqMT4fA",
         },
       ],
       companies: {
@@ -412,6 +556,10 @@ export default {
         this.turkishTracks = _.filter(
           this.turkishTracks,
           (s) => s.speaker.company_name == this.company.name
+        );
+        this.workshops = _.filter(
+          this.workshops,
+          (s) => s.sponsor == this.company.name
         );
       });
 

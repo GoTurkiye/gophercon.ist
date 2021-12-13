@@ -264,7 +264,7 @@
                   :href="track.url"
                   ><img
                     src="/assets/img/youtube.png"
-                    style="width: 30px; margin-right: 10px"
+                    style="width: 25px; margin-right: 10px;margin-top: -5px;"
                   />
                   {{ $t("live") }}</a
                 >

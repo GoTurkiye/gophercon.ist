@@ -152,7 +152,7 @@
               </div>
             </div>
             <div class="line-center">
-              <div class="turkish-tracks" style="min-widtg:50%">
+              <div class="turkish-tracks" style="min-width:50%">
                 <div
                   v-for="track in turkishTracks"
                   v-bind:key="track"
@@ -173,7 +173,7 @@
                   </div>
                 </div>
               </div>
-              <div class="english-tracks" style="min-widtg:50%">
+              <div class="english-tracks" style="min-width:50%">
                 <div
                   v-for="track in englishTracks"
                   v-bind:key="track"

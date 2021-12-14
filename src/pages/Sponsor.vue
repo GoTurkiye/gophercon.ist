@@ -51,23 +51,23 @@
               alt="gopher"
               class="gopher-free"
             />
-            <div class="name">{{ job.title }}</div>
+            <div class="name">{{ job[$i18n.locale].title }}</div>
             <div class="row">
               <div class="col-12 col-md-6">
-                <img :src="job.img" width="100%" />
+                <img :src="job[$i18n.locale].img" width="100%" />
               </div>
               <div class="col-12 col-md-6">
-                <p v-html="job.desc"></p>
+                <p v-html="job[$i18n.locale].desc"></p>
                 <br />
                 <ul>
-                  <li v-for="item in job.items" v-bind:key="item">
+                  <li v-for="item in job[$i18n.locale].items" v-bind:key="item">
                     {{ item }}
                   </li>
                 </ul>
               </div>
             </div>
 
-            <a :href="job.url" class="buy buy-red" target="_blank">{{
+            <a :href="job[$i18n.locale].url" class="buy buy-red" target="_blank">{{
               $t("apply")
             }}</a>
           </div>
@@ -152,7 +152,7 @@
               </div>
             </div>
             <div class="line-center">
-              <div class="turkish-tracks" style="min-width:50%">
+              <div class="turkish-tracks" style="min-width: 50%">
                 <div
                   v-for="track in turkishTracks"
                   v-bind:key="track"
@@ -173,7 +173,7 @@
                   </div>
                 </div>
               </div>
-              <div class="english-tracks" style="min-width:50%">
+              <div class="english-tracks" style="min-width: 50%">
                 <div
                   v-for="track in englishTracks"
                   v-bind:key="track"
@@ -211,7 +211,7 @@
         </div>
       </div>
     </section>
-        <section class="schedule" id="workshop">
+    <section class="schedule" id="workshop">
       <h2 class="title">{{ $t("workshops") }}</h2>
 
       <div class="container">
@@ -408,7 +408,7 @@ export default {
             "https://media.kommunity.com/live/goturkiye/events/gophercon-turkey-1c8eab1d/speakers/abdulsamet-ileri_live_61b2f37e78623.jpeg",
           sponsor: "Modanisa",
           public: false,
-          url: "http://bit.ly/gctr_atm",
+          url: "https://bit.ly/3INYviV",
         },
         {
           start: "14:30",
@@ -461,15 +461,28 @@ export default {
           },
           jobs: [
             {
-              title: "Golang Developer",
-              img: "https://media-exp1.licdn.com/dms/image/C4E22AQFQcbf6z6NXQQ/feedshare-shrink_2048_1536/0/1638447161956?e=1641427200&v=beta&t=VFmDiMTp318LkPChWuhHdQvLLZllk_5CYQkjs-AY6CM",
-              url: "https://www.linkedin.com/posts/trendyolgroup_we-are-looking-for-golang-developers-if-activity-6872145490822127617-XPLG/",
-              desc: "We are looking for Golang Developers! <br>If you have a good understanding of data structures, algorithms, design patterns; an experience with Golang or want to work with Go modules, don't miss this opportunity! 🚀",
-              items: [
-                "Experience with Golang or desire to learn Golang!",
-                "Familiarity with the principles and trade-offs of a microservices architecture, caching and messaging",
-                "Practical knowledge about OOP, Design Patterns,Clean Code,Craftsmanship culture, Refactoring and Unit Testing.",
-              ],
+              tr: {
+                title: "Golang Developer",
+                img: "https://media-exp1.licdn.com/dms/image/C4E22AQFQcbf6z6NXQQ/feedshare-shrink_2048_1536/0/1638447161956?e=1641427200&v=beta&t=VFmDiMTp318LkPChWuhHdQvLLZllk_5CYQkjs-AY6CM",
+                url: "https://www.linkedin.com/posts/trendyolgroup_we-are-looking-for-golang-developers-if-activity-6872145490822127617-XPLG/",
+                desc: "We are looking for Golang Developers! <br>If you have a good understanding of data structures, algorithms, design patterns; an experience with Golang or want to work with Go modules, don't miss this opportunity! 🚀",
+                items: [
+                  "Experience with Golang or desire to learn Golang!",
+                  "Familiarity with the principles and trade-offs of a microservices architecture, caching and messaging",
+                  "Practical knowledge about OOP, Design Patterns,Clean Code,Craftsmanship culture, Refactoring and Unit Testing.",
+                ],
+              },
+              en: {
+                title: "Golang Developer",
+                img: "https://media-exp1.licdn.com/dms/image/C4E22AQFQcbf6z6NXQQ/feedshare-shrink_2048_1536/0/1638447161956?e=1641427200&v=beta&t=VFmDiMTp318LkPChWuhHdQvLLZllk_5CYQkjs-AY6CM",
+                url: "https://www.linkedin.com/posts/trendyolgroup_we-are-looking-for-golang-developers-if-activity-6872145490822127617-XPLG/",
+                desc: "We are looking for Golang Developers! <br>If you have a good understanding of data structures, algorithms, design patterns; an experience with Golang or want to work with Go modules, don't miss this opportunity! 🚀",
+                items: [
+                  "Experience with Golang or desire to learn Golang!",
+                  "Familiarity with the principles and trade-offs of a microservices architecture, caching and messaging",
+                  "Practical knowledge about OOP, Design Patterns,Clean Code,Craftsmanship culture, Refactoring and Unit Testing.",
+                ],
+              },
             },
           ],
         },
@@ -494,16 +507,45 @@ export default {
           title: "Modanisa",
           type: "platinum",
           logo: "/assets/img/sponsors/modanisa.png",
-          url: "https://modanisa.com/",
-          linkedin: "https://www.linkedin.com/company/modanisa/",
-          twitter: "https://twitter.com/modanisa",
+          url: "https://bit.ly/3oPZnfc",
+          linkedin: "https://bit.ly/3GLqo9N",
+          twitter: "https://bit.ly/3ETV2ND",
           youtube: "https://www.youtube.com/channel/UCuEGkLQk-sUGE_CO78bB1Ig",
           discord: "https://discord.gg/tHZxfquYdq",
           about: {
             en: "Modanisa.com launched on Mother’s Day, 2011. We were the first Turkish fashion platform to deliver online clothes shopping to our target audience in such variety. Born in Istanbul, we now have customers in 140 countries. We offer contents in 6 languages: Turkish, Arabic, English, French, German and Bahasa. We speak our customers’ language, we recognize their needs, and we know their preferences. Each month, we reach 30 million visitors from all over the world via our app and desktop platforms. We sell over 1000 brands and 100 thousand products, shipping thousands of packages a day to five continents. We employ confident and youthful staff from different nationalities and cultures whose average age is 28. As Turkey’s first international online shopping site platform and e-export champion, we are proud to introduce small producers and designers to the world. We may be growing fast, but we still adhere to our start-up ethos.",
             tr: 'Modanisa.com, 2011 yılının Anneler Günü’nde açılışını yaptı. Doğum yerimiz İstanbul ve 140 ülkeden müşterilerimiz var. Yayınlarımızı Türkçe, Arapça, İngilizce, Fransızca, Almanca ve Bahasa olmak üzere 6 dilde gerçekleştiriyoruz. Dünyanın 5 kıtasına her gün binlerce kargo gönderiyoruz. Her ay dünyanın dört bir yanından "muhafazakar" giyim tarzını benimsemiş 30 milyon ziyaretçiye app, mobil ve desktop platformlarından ulaşıyoruz. Onların dilini konuşuyor, ihtiyaçlarını tanıyor, tercihlerini biliyoruz. Şimdilik satışını yaptığımız marka sayısı 1000, ürün çeşitliliğimiz 100 bin. Farklı milliyet ve kültürlerden, yaş ortalaması 28 olan genç ve atak bir insan kaynağımız var.Bugün, ülkemizin ilk uluslararası online alışveriş sitesi ve e-ihracat şampiyonu olarak, Türkiye\'nin hazır giyimdeki gücünü dünyayla buluşturmanın gururunu yaşıyoruz. Müşterilerimizin sevgisi, güveni ve yakın ilgisiyle büyümeye devam ediyoruz; büyürken de start up ruhumuzu koruyoruz.',
           },
-          jobs: [],
+          jobs: [
+            {
+              tr: {
+                title: "Full Stack Developer",
+                img: "/assets/img/sponsors/modanisa-job.jpeg",
+                url: "https://bit.ly/3yoD0At",
+                desc: "Teknoloji ekibimize, büyük ölçekli dağıtık sistemleri mikro-servis ve mikro-önyüz mimarilerini kullanarak gerçekleştirecek Full Stack Yazılım Geliştirici olarak aramıza katılmak için bu fırsatı kaçırma.<br><br>Hiyerarşik olmayan bir ortamda %100 remote ve otonom bir ekibe katılarak dinamik, heyecan veren, yenilikçi, sürekli büyüyen ve gelişen ürün ve projelerde aktif rol almak isteyen meraklı bir teknoloji uzmanı isen veya olmak istiyorsan bizim aradığımız kişi sen olabilirsin.",
+                items: [
+                  "Modern programlama dilleri ve önyüz teknolojilerinde tecrübe sahibi isen, (tercihen Golang, Vuejs ve/veya Flutter)",
+                  "Test-yönelimli yazılım geliştirme (TDD) ve kabul-testi-yönelimli yazılım geliştirme (A-TDD) kullanarak yüksek kaliteli ve iyi test edilmiş yazılım geliştirmeyi benimsemişsen",
+                  "Bilgisayar bilimleri kavramlarına güçlü bir aşinalığın varsa ve kullanarak bilgi ve tecrübe sahibi olmuşsan (algoritma tasarımı ve karmaşıklığı, eşzamanlı çalışan yazılım, çok görevli ve kaynak paylaşımlı yazılımlar)",
+                  "Farklı yazılım geliştirme metodolojileri ve paradigmaları hakkında bilgi sahibi isen (Nesne Yönelimli Programlama, Fonksiyonel Programlama, Yalın Kod, Tasarım Şekilleri)",
+                  "Dağıtık mimariler konusunda bilgi sahibi isen veya bu tüm konularda öğrenerek takımdaki diğer arkadaşlarınla beraber eşli programlama yaparak kendini geliştirmek fırsatı yakalamak istiyorsan hemen şimdi başvur.",
+                ],
+              },
+              en: {
+                title: "Full Stack Developer",
+                img: "/assets/img/sponsors/modanisa-job.jpeg",
+                url: "https://bit.ly/3yoD0At",
+                desc: "We are looking for new talents to join our Technology team as a Full Stack Developer for creating large-scale distributed systems out of micro-services and micro-frontend.<br><br>Are you a technology enthusiast and looking for a new challenge and likes to work within a dynamic, exciting, innovative, scaling up working environment by joining a highly autonomous team in a non-hierarchical environment. You might be the one for us.",
+                items: [
+                  "Experienced in modern languages and frontend technologies, preferably in Golang, Vuejs and/or Flutter",
+                  "You can skillfully write high-quality, well-tested code using test-driven design (TDD)  and acceptance test-driven design (A-TDD) using refactoring continuously)",
+                  "Strong computer science skills (algorithm design/complexity, concurrency, multi-tasking, resource sharing)",
+                  "Knowledge of different software development methodologies and paradigms (OOP, FP, Clean Code, Design Patterns)",
+                  "Understanding distributed systems.Also if you would like to have the opportunity to improve yourself by learning all these subjects by doing pair-programming with your other teammates, apply now.",
+                ],
+              },
+            },
+          ],
         },
       },
       company: {},

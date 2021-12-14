@@ -475,7 +475,7 @@ export default {
             "https://media.kommunity.com/live/goturkiye/events/gophercon-turkey-1c8eab1d/speakers/abdulsamet-ileri_live_61b2f37e78623.jpeg",
           sponsor: "Modanisa",
           public: false,
-          url: "http://bit.ly/gctr_atm",
+          url: "https://bit.ly/3INYviV",
         },
         {
           start: "14:30",

@@ -520,7 +520,7 @@ export default {
             {
               tr: {
                 title: "Full Stack Developer",
-                img: "/assets/img/sponsors/modanisa-job-2.jpeg",
+                img: "/assets/img/sponsors/modanisa-job-2.jpg",
                 url: "https://bit.ly/3yoD0At",
                 desc: "Teknoloji ekibimize, büyük ölçekli dağıtık sistemleri mikro-servis ve mikro-önyüz mimarilerini kullanarak gerçekleştirecek Full Stack Yazılım Geliştirici olarak aramıza katılmak için bu fırsatı kaçırma.<br><br>Hiyerarşik olmayan bir ortamda %100 remote ve otonom bir ekibe katılarak dinamik, heyecan veren, yenilikçi, sürekli büyüyen ve gelişen ürün ve projelerde aktif rol almak isteyen meraklı bir teknoloji uzmanı isen veya olmak istiyorsan bizim aradığımız kişi sen olabilirsin.",
                 items: [
@@ -533,7 +533,7 @@ export default {
               },
               en: {
                 title: "Full Stack Developer",
-                img: "/assets/img/sponsors/modanisa-job-2.jpeg",
+                img: "/assets/img/sponsors/modanisa-job-2.jpg",
                 url: "https://bit.ly/3yoD0At",
                 desc: "We are looking for new talents to join our Technology team as a Full Stack Developer for creating large-scale distributed systems out of micro-services and micro-frontend.<br><br>Are you a technology enthusiast and looking for a new challenge and likes to work within a dynamic, exciting, innovative, scaling up working environment by joining a highly autonomous team in a non-hierarchical environment. You might be the one for us.",
                 items: [

@@ -24,7 +24,7 @@
             <ul class="footer-social-menu">
               <li>
                 <a
-                  href="https://twitter.com/goturkiye"
+                  href="https://twitter.com/goturkiyee"
                   title="twitter"
                   target="_blank"
                 >

@@ -520,7 +520,7 @@ export default {
             {
               tr: {
                 title: "Full Stack Developer",
-                img: "/assets/img/sponsors/modanisa-job.jpeg",
+                img: "/assets/img/sponsors/modanisa-job-2.jpeg",
                 url: "https://bit.ly/3yoD0At",
                 desc: "Teknoloji ekibimize, büyük ölçekli dağıtık sistemleri mikro-servis ve mikro-önyüz mimarilerini kullanarak gerçekleştirecek Full Stack Yazılım Geliştirici olarak aramıza katılmak için bu fırsatı kaçırma.<br><br>Hiyerarşik olmayan bir ortamda %100 remote ve otonom bir ekibe katılarak dinamik, heyecan veren, yenilikçi, sürekli büyüyen ve gelişen ürün ve projelerde aktif rol almak isteyen meraklı bir teknoloji uzmanı isen veya olmak istiyorsan bizim aradığımız kişi sen olabilirsin.",
                 items: [
@@ -528,20 +528,20 @@ export default {
                   "Test-yönelimli yazılım geliştirme (TDD) ve kabul-testi-yönelimli yazılım geliştirme (A-TDD) kullanarak yüksek kaliteli ve iyi test edilmiş yazılım geliştirmeyi benimsemişsen",
                   "Bilgisayar bilimleri kavramlarına güçlü bir aşinalığın varsa ve kullanarak bilgi ve tecrübe sahibi olmuşsan (algoritma tasarımı ve karmaşıklığı, eşzamanlı çalışan yazılım, çok görevli ve kaynak paylaşımlı yazılımlar)",
                   "Farklı yazılım geliştirme metodolojileri ve paradigmaları hakkında bilgi sahibi isen (Nesne Yönelimli Programlama, Fonksiyonel Programlama, Yalın Kod, Tasarım Şekilleri)",
-                  "Dağıtık mimariler konusunda bilgi sahibi isen veya bu tüm konularda öğrenerek takımdaki diğer arkadaşlarınla beraber eşli programlama yaparak kendini geliştirmek fırsatı yakalamak istiyorsan hemen şimdi başvur.",
+                  "Dağıtık mimariler konusunda bilgi sahibi isen",
                 ],
               },
               en: {
                 title: "Full Stack Developer",
-                img: "/assets/img/sponsors/modanisa-job.jpeg",
+                img: "/assets/img/sponsors/modanisa-job-2.jpeg",
                 url: "https://bit.ly/3yoD0At",
                 desc: "We are looking for new talents to join our Technology team as a Full Stack Developer for creating large-scale distributed systems out of micro-services and micro-frontend.<br><br>Are you a technology enthusiast and looking for a new challenge and likes to work within a dynamic, exciting, innovative, scaling up working environment by joining a highly autonomous team in a non-hierarchical environment. You might be the one for us.",
                 items: [
                   "Experienced in modern languages and frontend technologies, preferably in Golang, Vuejs and/or Flutter",
-                  "You can skillfully write high-quality, well-tested code using test-driven design (TDD)  and acceptance test-driven design (A-TDD) using refactoring continuously)",
+                  "You can skillfully write high-quality, well-tested code using test-driven design (TDD)  and acceptance test-driven design (A-TDD) using refactoring continuously",
                   "Strong computer science skills (algorithm design/complexity, concurrency, multi-tasking, resource sharing)",
                   "Knowledge of different software development methodologies and paradigms (OOP, FP, Clean Code, Design Patterns)",
-                  "Understanding distributed systems.Also if you would like to have the opportunity to improve yourself by learning all these subjects by doing pair-programming with your other teammates, apply now.",
+                  "Understanding distributed systems",
                 ],
               },
             },

@@ -260,6 +260,7 @@
                   <img :src="track.avatar" alt="avatar" class="avatar" />
                   {{ track.speakerName }}
                 </div>
+                <p><br>{{ track.desc[[$i18n.locale]] }}</p>
                 <a
                   class="btn btn-custom"
                   target="_blank"
@@ -398,6 +399,10 @@ export default {
           sponsor: "Trendyol",
           public: false,
           url: "https://forms.gle/1JpvHyAGf3B3WgGG7",
+          desc: {
+            en: "",
+            tr: "",
+          },
         },
         {
           start: "12:45",
@@ -409,6 +414,10 @@ export default {
           sponsor: "Modanisa",
           public: false,
           url: "https://bit.ly/3INYviV",
+          desc: {
+            en: "Do you want to test all of your services in a way that is faster and more reliable than end-to-end testing? Do you want to find out before you deploy whether or not your applications and services will work together? By using Pact framework, Consumer Driven Contract (CDC) Testing offers rapid and solid answer to overcome the problem of slow integration testing of large and distributed systems. In this workshop, we will look over the implementation of these ever getting more promising concepts by utilizing the Go programming language. You will have the power of managing continuously evolving your codebases knowing that Pact will guarantee contracts and specifications are met.  Apply with the button below.",
+            tr: "Bu atölye Mikroservis mimarisinde çok sayıda kullanılan (provider) ve kullanıcı (consumer) servislerinin kontrat yapısı ile değişikliklerde olası sorunların Consumer Driven Contract testleri ile hızlı bir şekilde farkına varılması hakkında olacak. Kısıtlı sayıda katılıma açık bu etkinlik için aşağıdaki başvur butonuna tıklayabilirsiniz.",
+          },
         },
         {
           start: "14:30",
@@ -420,6 +429,10 @@ export default {
           sponsor: "",
           public: true,
           url: "https://www.youtube.com/watch?v=sg1rWz6v-kE",
+          desc: {
+            en: "",
+            tr: "",
+          },
         },
         {
           start: "16:15",
@@ -431,6 +444,10 @@ export default {
           sponsor: "Trendyol",
           public: false,
           url: "https://forms.gle/3vv8r2rccyBKduqx9",
+          desc: {
+            en: "",
+            tr: "",
+          },
         },
         {
           start: "18:00",
@@ -442,6 +459,10 @@ export default {
           sponsor: "Bestcloudfor.me",
           public: false,
           url: "https://forms.gle/kNUjJ5FBrcNqMT4fA",
+          desc: {
+            en: "",
+            tr: "",
+          },
         },
       ],
       companies: {
